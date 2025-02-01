@@ -9,7 +9,7 @@ func _ready() -> void:
 		print(i)
 
 func _process(delta: float) -> void:
-	$Logo.rotation_degrees += 5
+	$Logo.rotation_degrees += 200 * delta
 	
 	if $Logo.position.x > 1000:
 		$Logo.pos.x = 0
