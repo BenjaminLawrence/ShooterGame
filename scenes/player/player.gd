@@ -7,3 +7,6 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_pressed("primary action"):
 		print("shoot laser")
+	
+	if Input.is_action_pressed("secondary action"):
+		print("shoot grenade")
