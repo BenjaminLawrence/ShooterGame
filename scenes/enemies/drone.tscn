@@ -3,9 +3,8 @@
 [ext_resource type="Script" path="res://scenes/enemies/drone.gd" id="1_6t2uv"]
 [ext_resource type="Texture2D" uid="uid://c44jowwwl0frp" path="res://graphics/enemies/drone.png" id="1_udu61"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pt0id"]
-radius = 72.0
-height = 300.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_dses6"]
+radius = 70.0286
 
 [node name="Drone" type="CharacterBody2D"]
 script = ExtResource("1_6t2uv")
@@ -15,4 +14,4 @@ texture = ExtResource("1_udu61")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
-shape = SubResource("CapsuleShape2D_pt0id")
+shape = SubResource("CircleShape2D_dses6")
