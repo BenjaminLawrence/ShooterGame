@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5c1vsfyrpf3w"]
+
+[ext_resource type="Texture2D" uid="uid://c44jowwwl0frp" path="res://graphics/enemies/drone.png" id="1_udu61"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pt0id"]
+radius = 72.0
+height = 300.0
+
+[node name="Drone" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_udu61")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pt0id")
