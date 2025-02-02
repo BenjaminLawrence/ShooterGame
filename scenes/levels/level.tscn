@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_dcbrs"]
 [ext_resource type="PackedScene" uid="uid://bf46st1olmhyi" path="res://scenes/levels/toilet.tscn" id="4_m8o64"]
 [ext_resource type="PackedScene" uid="uid://32o331tm5duu" path="res://scenes/player/player.tscn" id="4_wtdwt"]
-[ext_resource type="PackedScene" uid="uid://c5c1vsfyrpf3w" path="res://scenes/levels/drone.tscn" id="5_0t2it"]
+[ext_resource type="PackedScene" uid="uid://c5c1vsfyrpf3w" path="res://scenes/enemies/drone.tscn" id="5_0t2it"]
 [ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/levels/bed.tscn" id="5_mvifm"]
 [ext_resource type="AudioStream" uid="uid://df6r6yrejusjo" path="res://audio/battleThemeA.mp3" id="6_42mqn"]
 
