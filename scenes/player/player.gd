@@ -14,6 +14,7 @@ func _process(_delta: float) -> void:
 	
 	# rotate
 	look_at(get_global_mouse_position())
+	var player_direction = (get_global_mouse_position() - position).normalized()
 	
 	# laser shooting
 	if Input.is_action_pressed("primary action") and can_laser:
@@ -21,14 +22,13 @@ func _process(_delta: float) -> void:
 		var selected_marker = laser_markers[randi() % laser_markers.size()]
 		can_laser = false
 		$LaserTimer.start()
-		shoot_laser.emit(selected_marker.global_position)
+		shoot_laser.emit(selected_marker.global_position, player_direction)
 	
 	# grenade throwing
 	if Input.is_action_pressed("secondary action") and can_grenade:
+		var pos_marker = $ProjectileStartPositions.get_children()[0]
 		can_grenade = false
 		$GrenadeTimer.start()
-		var pos_marker = $ProjectileStartPositions.get_children()[0]
-		var player_direction = (get_global_mouse_position() - position).normalized()
 		throw_grenade.emit(pos_marker.global_position, player_direction)
 
 
