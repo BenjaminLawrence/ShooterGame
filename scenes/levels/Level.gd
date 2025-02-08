@@ -1,5 +1,6 @@
 extends Node2D
 
+var laser_scene = preload("res://projectiles/laser.tscn")
 
 func _on_gate_player_entered_gate() -> void:
 	print("player has entered gate")
