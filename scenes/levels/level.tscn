@@ -1,11 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://clyjnhg4t2xcm"]
+[gd_scene load_steps=5 format=3 uid="uid://clyjnhg4t2xcm"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_dcbrs"]
+[ext_resource type="Texture2D" uid="uid://cdbgboxvf4wmi" path="res://graphics/objects/gate.png" id="2_vkrap"]
 [ext_resource type="PackedScene" uid="uid://32o331tm5duu" path="res://scenes/player/player.tscn" id="4_wtdwt"]
 [ext_resource type="AudioStream" uid="uid://df6r6yrejusjo" path="res://audio/battleThemeA.mp3" id="6_42mqn"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_dcbrs")
+
+[node name="Gate" type="Sprite2D" parent="."]
+position = Vector2(537, -573)
+texture = ExtResource("2_vkrap")
 
 [node name="Player" parent="." instance=ExtResource("4_wtdwt")]
 position = Vector2(575, 357)
