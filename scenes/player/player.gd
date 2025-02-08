@@ -3,7 +3,7 @@ extends CharacterBody2D
 var can_laser: bool = true
 var can_grenade: bool = true
 signal shoot_laser(position)
-signal throw_grenade
+signal throw_grenade(position)
 
 func _process(_delta: float) -> void:
 	
@@ -19,10 +19,9 @@ func _process(_delta: float) -> void:
 		shoot_laser.emit(selected_laser.global_position)
 	
 	if Input.is_action_pressed("secondary action") and can_grenade:
-		#print("throw grenade")
-		throw_grenade.emit()
 		can_grenade = false
 		$GrenadeTimer.start()
+		throw_grenade.emit($GrenadeStartPosition.global_position)
 
 
 func _on_laser_timer_timeout() -> void:
