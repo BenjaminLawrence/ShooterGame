@@ -19,6 +19,15 @@ position = Vector2(520, -456)
 [node name="Player" parent="." instance=ExtResource("4_wtdwt")]
 position = Vector2(512, 517)
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+rotation_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_top_margin = 0.1
+drag_right_margin = 0.1
+drag_bottom_margin = 0.1
+
 [node name="Projectiles" type="Node2D" parent="."]
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
