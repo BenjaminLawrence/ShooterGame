@@ -7,8 +7,6 @@
 radius = 15.0
 
 [node name="Grenade" type="RigidBody2D"]
-gravity_scale = 0.0
-linear_damp = 25.0
 script = ExtResource("1_gqn7k")
 
 [node name="GrenadeImage" type="Sprite2D" parent="."]
