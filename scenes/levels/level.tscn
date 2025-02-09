@@ -1,17 +1,53 @@
-[gd_scene load_steps=5 format=3 uid="uid://clyjnhg4t2xcm"]
+[gd_scene load_steps=12 format=3 uid="uid://clyjnhg4t2xcm"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_dcbrs"]
+[ext_resource type="Texture2D" uid="uid://cdqnmmxwja2ed" path="res://graphics/ground/stones.png" id="2_5xrhq"]
+[ext_resource type="Texture2D" uid="uid://ckf84cqfuvpk0" path="res://graphics/decals/dirt_patch.png" id="3_mspno"]
 [ext_resource type="PackedScene" uid="uid://do3n007cpmlpw" path="res://scenes/levels/gate.tscn" id="3_wyow8"]
+[ext_resource type="Texture2D" uid="uid://c2jutvjeosjk0" path="res://graphics/decals/moss/moss_1.png" id="4_2y0t6"]
 [ext_resource type="PackedScene" uid="uid://32o331tm5duu" path="res://scenes/player/player.tscn" id="4_wtdwt"]
+[ext_resource type="Texture2D" uid="uid://y6kqlk2rpfb" path="res://graphics/decals/moss/moss_2.png" id="5_63xjf"]
 [ext_resource type="AudioStream" uid="uid://df6r6yrejusjo" path="res://audio/battleThemeA.mp3" id="6_42mqn"]
+[ext_resource type="Texture2D" uid="uid://dhnrcly26owgy" path="res://graphics/decals/moss/moss_3.png" id="6_movuw"]
+[ext_resource type="Texture2D" uid="uid://b8ww1ai2fcaix" path="res://graphics/decals/moss/moss_4.png" id="7_d735h"]
+[ext_resource type="Texture2D" uid="uid://bhpch4baxghs3" path="res://graphics/decals/moss/moss_5.png" id="8_o3wuo"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_dcbrs")
 
-[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_42mqn")
-volume_db = -10.0
-autoplay = true
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="Soil" type="Sprite2D" parent="Ground"]
+texture_repeat = 2
+position = Vector2(630, 481)
+texture = ExtResource("2_5xrhq")
+region_enabled = true
+region_rect = Rect2(0, 0, 7680, 5120)
+
+[node name="Decoration" type="Sprite2D" parent="Ground"]
+modulate = Color(1, 0.948468, 0.702157, 1)
+position = Vector2(-476, 1455)
+texture = ExtResource("3_mspno")
+
+[node name="Moss1" type="Sprite2D" parent="Ground"]
+position = Vector2(-740, 625)
+texture = ExtResource("4_2y0t6")
+
+[node name="Moss2" type="Sprite2D" parent="Ground"]
+position = Vector2(552, 1304)
+texture = ExtResource("5_63xjf")
+
+[node name="Moss3" type="Sprite2D" parent="Ground"]
+position = Vector2(1812, 681)
+texture = ExtResource("6_movuw")
+
+[node name="Moss4" type="Sprite2D" parent="Ground"]
+position = Vector2(1208, 1405)
+texture = ExtResource("7_d735h")
+
+[node name="Moss5" type="Sprite2D" parent="Ground"]
+position = Vector2(1192, 880)
+texture = ExtResource("8_o3wuo")
 
 [node name="Gate" parent="." instance=ExtResource("3_wyow8")]
 position = Vector2(520, -456)
@@ -30,6 +66,11 @@ drag_right_margin = 0.1
 drag_bottom_margin = 0.1
 
 [node name="Projectiles" type="Node2D" parent="."]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_42mqn")
+volume_db = -10.0
+autoplay = true
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="shoot_laser" from="Player" to="." method="_on_player_shoot_laser"]
