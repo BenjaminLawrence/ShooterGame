@@ -89,6 +89,7 @@ tile_map_data = PackedByteArray("AAD/////AAABAAEAAAD//wAAAAABAAEAAAAAAAAAAAABAAE
 tile_set = SubResource("TileSet_imdc5")
 
 [node name="InnerWallsTileMap" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAACAAMAAgAFAAgAAAACAAIAAgABAAYAAAACAAEAAgABAAYAAAACAAAAAgADAAcAAAABAAAAAgAAAAYAAAAAAAAAAgAAAAYAAAD//wAAAgADAAgAAAD+/wAAAgAAAAYAAAD9/wAAAgAAAAYAAAD6/wAAAgAEAAcAAAD8/wAAAgAEAAcAAAD7/wAAAgAGAAcAAAACAP//AgABAAYAAAACAP7/AgAFAAYAAAACAPz/AgAFAAYAAAACAP3/AgAFAAgAAAD/////AgABAAYAAAD///7/AgAFAAYAAAD///z/AgAFAAYAAAA=")
 tile_set = SubResource("TileSet_k5ka2")
 
 [node name="OuterWallsTileMap" type="TileMapLayer" parent="."]
