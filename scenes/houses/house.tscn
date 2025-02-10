@@ -79,6 +79,7 @@ tile_size = Vector2i(390, 390)
 sources/1 = SubResource("TileSetAtlasSource_4cqk2")
 
 [node name="House" type="Area2D"]
+collision_layer = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 2)
