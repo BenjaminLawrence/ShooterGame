@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://clyjnhg4t2xcm"]
+[gd_scene load_steps=23 format=4 uid="uid://clyjnhg4t2xcm"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_dcbrs"]
 [ext_resource type="Texture2D" uid="uid://cdqnmmxwja2ed" path="res://graphics/ground/stones.png" id="2_5xrhq"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cucgcq2w8im1j" path="res://scenes/objects/billboard.tscn" id="15_t50k4"]
 [ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/objects/bed.tscn" id="16_txv4d"]
 [ext_resource type="PackedScene" uid="uid://bf46st1olmhyi" path="res://scenes/objects/toilet.tscn" id="17_sbhg3"]
+[ext_resource type="PackedScene" uid="uid://b3cple8urvy6j" path="res://scenes/objects/steam_vent.tscn" id="18_mwtdy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qadh5"]
 resource_name = "Soil"
@@ -163,6 +164,12 @@ rotation = 2.35619
 [node name="Toilet2" parent="Objects" instance=ExtResource("17_sbhg3")]
 position = Vector2(-1079, 6473)
 rotation = 2.35619
+
+[node name="SteamVent" parent="Objects" instance=ExtResource("18_mwtdy")]
+position = Vector2(1138, 591)
+
+[node name="SteamVent2" parent="Objects" instance=ExtResource("18_mwtdy")]
+position = Vector2(-1585, 2879)
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="shoot_laser" from="Player" to="." method="_on_player_shoot_laser"]
