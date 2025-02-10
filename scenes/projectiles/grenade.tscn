@@ -11,6 +11,8 @@ bounce = 0.4
 radius = 15.0
 
 [node name="Grenade" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 15
 physics_material_override = SubResource("PhysicsMaterial_dnwbl")
 gravity_scale = 0.0
 linear_damp = 1.6
