@@ -10,6 +10,7 @@ size = Vector2(840, 168)
 polygon = PackedVector2Array(-399, 65, -375, 23, -343, -8, -311, -27, -271, -41, 267, -41, 313, -25, 342, -3, 369, 26, 396, 62, 417, 20, 385, -23, 347, -59, 300, -73, 274, -80, -285, -78, -312, -73, -352, -56, -390, -20, -418, 19)
 
 [node name="wall_lamp" type="StaticBody2D"]
+scale = Vector2(0.5, 0.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_2kda2")
