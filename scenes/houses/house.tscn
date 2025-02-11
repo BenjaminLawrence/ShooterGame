@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=4 uid="uid://cy1jjm6hupx7w"]
+[gd_scene load_steps=10 format=4 uid="uid://cy1jjm6hupx7w"]
 
 [ext_resource type="Texture2D" uid="uid://ccd206r36erqw" path="res://graphics/tilesets/interior.png" id="1_phn2h"]
+[ext_resource type="PackedScene" uid="uid://c54cxflfn07vh" path="res://scenes/objects/simple_light.tscn" id="2_5esyu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3aoy4"]
 size = Vector2(4429, 2864)
@@ -128,3 +129,24 @@ tile_set = SubResource("TileSet_k5ka2")
 [node name="OuterWallsTileMap" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAFAP3/AQAFAAEAAAAFAP7/AQAFAAEAAAAFAP//AQAFAAEAAAAFAAAAAQAFAAEAAAAFAAEAAQAFAAEAAAAFAAIAAQAFAAEAAAD6/wIAAQADAAEAAAD6/wEAAQADAAEAAAD6/wAAAQADAAEAAAD6////AQADAAEAAAD6//7/AQADAAEAAAD6//3/AQADAAEAAAAFAPz/AQAFAAAAAAAFAAMAAQAFAAIAAAD6/wMAAQADAAIAAAD6//z/AQADAAAAAAAEAAMAAQAGAAQAAAADAAMAAQAGAAMAAAACAAMAAQAEAAIAAAABAAMAAQAEAAIAAAAAAAMAAQAEAAIAAAD//wMAAQAEAAIAAAD+/wMAAQAEAAIAAAD9/wMAAQAEAAIAAAD8/wMAAQAEAAIAAAD7/wMAAQAEAAIAAAAEAPz/AQAEAAIAAAADAPz/AQAEAAIAAAACAPz/AQAEAAIAAAABAPz/AQAEAAIAAAAAAPz/AQAEAAIAAAD///z/AQAEAAIAAAD+//z/AQAEAAIAAAD9//z/AQAEAAIAAAD8//z/AQAEAAIAAAD7//z/AQAEAAIAAAA=")
 tile_set = SubResource("TileSet_b23bl")
+
+[node name="SimpleLight" parent="." instance=ExtResource("2_5esyu")]
+position = Vector2(2069, 0)
+rotation = 1.5708
+
+[node name="SimpleLight2" parent="." instance=ExtResource("2_5esyu")]
+position = Vector2(1561, -1290)
+
+[node name="SimpleLight3" parent="." instance=ExtResource("2_5esyu")]
+position = Vector2(391, -1292)
+
+[node name="SimpleLight4" parent="." instance=ExtResource("2_5esyu")]
+position = Vector2(-1171, -1289)
+
+[node name="SimpleLight5" parent="." instance=ExtResource("2_5esyu")]
+position = Vector2(-1169, 1290)
+rotation = 3.14159
+
+[node name="SimpleLight6" parent="." instance=ExtResource("2_5esyu")]
+position = Vector2(0, 1286)
+rotation = 3.14159
