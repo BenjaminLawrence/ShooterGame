@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=4 uid="uid://cy1jjm6hupx7w"]
+[gd_scene load_steps=10 format=4 uid="uid://cy1jjm6hupx7w"]
 
 [ext_resource type="Texture2D" uid="uid://ccd206r36erqw" path="res://graphics/tilesets/interior.png" id="1_phn2h"]
 [ext_resource type="PackedScene" uid="uid://c54cxflfn07vh" path="res://scenes/objects/simple_light.tscn" id="2_5esyu"]
-[ext_resource type="PackedScene" uid="uid://cwh3ap17mtdiu" path="res://scenes/objects/wall_lamp.tscn" id="3_wyw7x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3aoy4"]
 size = Vector2(4429, 2864)
@@ -151,6 +150,3 @@ rotation = 3.14159
 [node name="SimpleLight6" parent="." instance=ExtResource("2_5esyu")]
 position = Vector2(0, 1286)
 rotation = 3.14159
-
-[node name="wall_lamp" parent="." instance=ExtResource("3_wyw7x")]
-position = Vector2(768, 1507)
