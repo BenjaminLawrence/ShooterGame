@@ -23,6 +23,9 @@ func _process(_delta: float) -> void:
 		can_laser = false
 		$LaserTimer.start()
 		shoot_laser.emit(selected_marker.global_position, player_direction)
+		#$LaserParticles.rotation_degrees = rad_to_deg(player_direction.angle())
+		$LaserParticles.emitting = true
+	
 	
 	# grenade throwing
 	if Input.is_action_pressed("secondary action") and can_grenade:
