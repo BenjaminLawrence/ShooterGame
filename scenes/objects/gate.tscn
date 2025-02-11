@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://do3n007cpmlpw"]
+[gd_scene load_steps=5 format=3 uid="uid://do3n007cpmlpw"]
 
 [ext_resource type="Texture2D" uid="uid://cdbgboxvf4wmi" path="res://graphics/objects/gate.png" id="1_g62h4"]
 [ext_resource type="Script" path="res://scenes/objects/gate.gd" id="1_hbb40"]
+[ext_resource type="PackedScene" uid="uid://cwh3ap17mtdiu" path="res://scenes/objects/wall_lamp.tscn" id="3_mdv3q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nkeo3"]
 size = Vector2(836, 401)
@@ -22,5 +23,11 @@ polygon = PackedVector2Array(-1437, -781, -1436, 543, -1424, 596, -1405, 643, -1
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(60, 607.5)
 shape = SubResource("RectangleShape2D_nkeo3")
+
+[node name="wall_lamp" parent="." instance=ExtResource("3_mdv3q")]
+position = Vector2(700, 807)
+
+[node name="wall_lamp2" parent="." instance=ExtResource("3_mdv3q")]
+position = Vector2(-578, 810)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

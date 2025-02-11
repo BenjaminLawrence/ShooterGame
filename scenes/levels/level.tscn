@@ -165,10 +165,10 @@ position = Vector2(-1079, 6473)
 rotation = 2.35619
 
 [node name="SteamVent" parent="Objects" instance=ExtResource("18_mwtdy")]
-position = Vector2(1138, 591)
+position = Vector2(1186, 885)
 
 [node name="SteamVent2" parent="Objects" instance=ExtResource("18_mwtdy")]
-position = Vector2(-1585, 2879)
+position = Vector2(-1381, 2765)
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="shoot_laser" from="Player" to="." method="_on_player_shoot_laser"]
