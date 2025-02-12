@@ -169,6 +169,36 @@ tile_set = SubResource("TileSet_7fqwn")
 position = Vector2(-2032, 4686)
 rotation = -2.35619
 
+[node name="Bed" parent="Ground/House" instance=ExtResource("16_txv4d")]
+position = Vector2(582.66, 964.491)
+rotation = 1.57079
+
+[node name="Bed2" parent="Ground/House" instance=ExtResource("16_txv4d")]
+position = Vector2(-53.736, 960.251)
+rotation = 1.57079
+
+[node name="Bed3" parent="Ground/House" instance=ExtResource("16_txv4d")]
+position = Vector2(-735.387, 992.781)
+rotation = 1.57079
+
+[node name="Toilet" parent="Ground/House" instance=ExtResource("17_sbhg3")]
+position = Vector2(-1938.18, -976.506)
+rotation = -1.57081
+
+[node name="Toilet2" parent="Ground/House" instance=ExtResource("17_sbhg3")]
+position = Vector2(-1937.48, -589.718)
+rotation = -1.57081
+
+[node name="Billboard" parent="Ground" instance=ExtResource("15_t50k4")]
+position = Vector2(2716, 889)
+rotation = 0.469494
+
+[node name="SteamVent" parent="Ground" instance=ExtResource("18_mwtdy")]
+position = Vector2(1186, 885)
+
+[node name="SteamVent2" parent="Ground" instance=ExtResource("18_mwtdy")]
+position = Vector2(-1381, 2765)
+
 [node name="Gate" parent="." instance=ExtResource("3_wyow8")]
 position = Vector2(520, -456)
 
@@ -191,38 +221,6 @@ drag_bottom_margin = 0.1
 stream = ExtResource("6_42mqn")
 volume_db = -10.0
 autoplay = true
-
-[node name="Objects" type="Node2D" parent="."]
-
-[node name="Billboard" parent="Objects" instance=ExtResource("15_t50k4")]
-position = Vector2(2716, 889)
-rotation = 0.469494
-
-[node name="Bed" parent="Objects" instance=ExtResource("16_txv4d")]
-position = Vector2(-1762, 3592)
-rotation = -0.785398
-
-[node name="Bed2" parent="Objects" instance=ExtResource("16_txv4d")]
-position = Vector2(-1315, 4045)
-rotation = -0.785398
-
-[node name="Bed3" parent="Objects" instance=ExtResource("16_txv4d")]
-position = Vector2(-810, 4504)
-rotation = -0.785398
-
-[node name="Toilet" parent="Objects" instance=ExtResource("17_sbhg3")]
-position = Vector2(-1352, 6747)
-rotation = 2.35619
-
-[node name="Toilet2" parent="Objects" instance=ExtResource("17_sbhg3")]
-position = Vector2(-1079, 6473)
-rotation = 2.35619
-
-[node name="SteamVent" parent="Objects" instance=ExtResource("18_mwtdy")]
-position = Vector2(1186, 885)
-
-[node name="SteamVent2" parent="Objects" instance=ExtResource("18_mwtdy")]
-position = Vector2(-1381, 2765)
 
 [node name="DayNightCycle" parent="." instance=ExtResource("19_3lm2b")]
 
