@@ -203,4 +203,5 @@ animations = [{
 
 [node name="LightFanAnimation" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_x3eke")
-frame_progress = 0.151534
+autoplay = "default"
+frame_progress = 0.632994
