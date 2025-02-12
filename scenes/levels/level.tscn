@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://clyjnhg4t2xcm"]
+[gd_scene load_steps=35 format=4 uid="uid://clyjnhg4t2xcm"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_dcbrs"]
 [ext_resource type="Texture2D" uid="uid://cdqnmmxwja2ed" path="res://graphics/ground/stones.png" id="2_5xrhq"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://bf46st1olmhyi" path="res://scenes/objects/toilet.tscn" id="17_sbhg3"]
 [ext_resource type="PackedScene" uid="uid://b3cple8urvy6j" path="res://scenes/objects/steam_vent.tscn" id="18_mwtdy"]
 [ext_resource type="PackedScene" uid="uid://bwlvofceo3rhh" path="res://scenes/levels/day_night_cycle.tscn" id="19_3lm2b"]
+[ext_resource type="PackedScene" uid="uid://ddhuvx2xij1bj" path="res://scenes/objects/light_fan_animation.tscn" id="20_wpbvb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qadh5"]
 resource_name = "Soil"
@@ -201,6 +202,7 @@ position = Vector2(-1381, 2765)
 
 [node name="Gate" parent="." instance=ExtResource("3_wyow8")]
 position = Vector2(520, -456)
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("4_wtdwt")]
 position = Vector2(512, 517)
@@ -216,6 +218,7 @@ drag_right_margin = 0.1
 drag_bottom_margin = 0.1
 
 [node name="Projectiles" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_42mqn")
@@ -223,6 +226,15 @@ volume_db = -10.0
 autoplay = true
 
 [node name="DayNightCycle" parent="." instance=ExtResource("19_3lm2b")]
+metadata/_edit_lock_ = true
+
+[node name="LightFanAnimation" parent="." instance=ExtResource("20_wpbvb")]
+position = Vector2(-2583, 3032)
+rotation = -2.35619
+
+[node name="LightFanAnimation2" parent="." instance=ExtResource("20_wpbvb")]
+position = Vector2(-3687, 4135)
+rotation = -2.35619
 
 [connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="shoot_laser" from="Player" to="." method="_on_player_shoot_laser"]
