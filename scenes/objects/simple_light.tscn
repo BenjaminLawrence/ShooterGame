@@ -20,10 +20,10 @@ shape = SubResource("CapsuleShape2D_6wb22")
 texture = ExtResource("1_bi2ts")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-color = Color(0.996078, 1, 0.317647, 0.831373)
+color = Color(0, 1, 1, 0.831373)
 energy = 3.0
 shadow_enabled = true
-shadow_color = Color(0.109804, 0.105882, 0, 0.0352941)
+shadow_color = Color(0, 0.268043, 0.268124, 0.0352941)
 shadow_filter = 1
 shadow_filter_smooth = 1.5
 texture = ExtResource("2_mgl8q")
