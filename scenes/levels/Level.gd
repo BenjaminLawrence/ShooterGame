@@ -20,3 +20,8 @@ func _on_player_throw_grenade(pos, direction) -> void:
 	grenade.position = pos
 	grenade.linear_velocity = direction * grenade.speed
 	$Projectiles.add_child(grenade)
+
+
+func _on_house_player_entered() -> void:
+	var camera_tween = get_tree().create_tween()
+	camera_tween.tween_property($Player/Camera2D, "zoom", Vector2(1,1), 1)
