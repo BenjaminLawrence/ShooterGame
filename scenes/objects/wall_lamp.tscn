@@ -22,10 +22,10 @@ region_enabled = true
 region_rect = Rect2(0, 0, 840, 170)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-color = Color(1, 0, 0, 1)
+color = Color(0.150509, 0.808529, 0, 1)
 energy = 3.0
 shadow_enabled = true
-shadow_color = Color(0.346155, 3.36915e-07, 2.40654e-07, 0.0431373)
+shadow_color = Color(0.0902058, 0.327885, 4.81308e-08, 0.0431373)
 shadow_filter = 1
 shadow_filter_smooth = 2.0
 texture = ExtResource("2_eierp")
