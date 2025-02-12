@@ -190,6 +190,12 @@ rotation = -1.57081
 position = Vector2(-1937.48, -589.718)
 rotation = -1.57081
 
+[node name="LightFanAnimation" parent="Ground/House" instance=ExtResource("20_wpbvb")]
+position = Vector2(1559.17, 779.932)
+
+[node name="LightFanAnimation2" parent="Ground/House" instance=ExtResource("20_wpbvb")]
+position = Vector2(1559.87, -780.653)
+
 [node name="Billboard" parent="Ground" instance=ExtResource("15_t50k4")]
 position = Vector2(2716, 889)
 rotation = 0.469494
@@ -200,7 +206,7 @@ position = Vector2(1186, 885)
 [node name="SteamVent2" parent="Ground" instance=ExtResource("18_mwtdy")]
 position = Vector2(-1381, 2765)
 
-[node name="Gate" parent="." instance=ExtResource("3_wyow8")]
+[node name="Gate" parent="Ground" instance=ExtResource("3_wyow8")]
 position = Vector2(520, -456)
 metadata/_edit_lock_ = true
 
@@ -228,14 +234,6 @@ autoplay = true
 [node name="DayNightCycle" parent="." instance=ExtResource("19_3lm2b")]
 metadata/_edit_lock_ = true
 
-[node name="LightFanAnimation" parent="." instance=ExtResource("20_wpbvb")]
-position = Vector2(-2583, 3032)
-rotation = -2.35619
-
-[node name="LightFanAnimation2" parent="." instance=ExtResource("20_wpbvb")]
-position = Vector2(-3687, 4135)
-rotation = -2.35619
-
-[connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
+[connection signal="player_entered_gate" from="Ground/Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="shoot_laser" from="Player" to="." method="_on_player_shoot_laser"]
 [connection signal="throw_grenade" from="Player" to="." method="_on_player_throw_grenade"]
