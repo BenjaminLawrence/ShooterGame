@@ -6,8 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kda2"]
 size = Vector2(840, 168)
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_j3lyt"]
-polygon = PackedVector2Array(-399, 65, -375, 23, -343, -8, -311, -27, -271, -41, 267, -41, 313, -25, 342, -3, 369, 26, 396, 62, 417, 20, 385, -23, 347, -59, 300, -73, 274, -80, -285, -78, -312, -73, -352, -56, -390, -20, -418, 19)
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1o2sx"]
+polygon = PackedVector2Array(208, -4, 212, -8, 216, -8, 220, -4, 220, 44, 216, 48, 212, 52, 208, 48)
 
 [node name="wall_lamp" type="StaticBody2D"]
 scale = Vector2(0.25, 0.25)
@@ -32,4 +32,9 @@ texture = ExtResource("2_eierp")
 texture_scale = 10.0
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-occluder = SubResource("OccluderPolygon2D_j3lyt")
+occluder = SubResource("OccluderPolygon2D_1o2sx")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="."]
+position = Vector2(-4, 0)
+scale = Vector2(-1, 1)
+occluder = SubResource("OccluderPolygon2D_1o2sx")
