@@ -11,6 +11,8 @@ polygon = PackedVector2Array(208, -4, 212, -8, 216, -8, 220, -4, 220, 44, 216, 4
 
 [node name="wall_lamp" type="StaticBody2D"]
 scale = Vector2(0.25, 0.25)
+collision_layer = 4
+collision_mask = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_2kda2")
