@@ -235,6 +235,7 @@ autoplay = true
 metadata/_edit_lock_ = true
 
 [connection signal="player_entered" from="Ground/House" to="." method="_on_house_player_entered"]
+[connection signal="player_exited" from="Ground/House" to="." method="_on_house_player_exited"]
 [connection signal="player_entered_gate" from="Ground/Gate" to="." method="_on_gate_player_entered_gate"]
 [connection signal="shoot_laser" from="Player" to="." method="_on_player_shoot_laser"]
 [connection signal="throw_grenade" from="Player" to="." method="_on_player_throw_grenade"]
