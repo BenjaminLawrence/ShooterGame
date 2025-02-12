@@ -26,8 +26,10 @@ shape = SubResource("RectangleShape2D_nkeo3")
 
 [node name="wall_lamp" parent="." instance=ExtResource("3_mdv3q")]
 position = Vector2(699, 792)
+rotation = 3.14159
 
 [node name="wall_lamp2" parent="." instance=ExtResource("3_mdv3q")]
 position = Vector2(-578, 793)
+rotation = 3.14159
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
