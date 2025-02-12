@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://ddhuvx2xij1bj"]
+[gd_scene load_steps=51 format=3 uid="uid://ddhuvx2xij1bj"]
 
 [ext_resource type="Texture2D" uid="uid://bm07dak7ffvie" path="res://graphics/lights/fan_animation/00000.png" id="1_dukmd"]
 [ext_resource type="Texture2D" uid="uid://d3t4p3jngppsg" path="res://graphics/lights/fan_animation/00001.png" id="2_bq4qp"]
@@ -48,6 +48,7 @@
 [ext_resource type="Texture2D" uid="uid://b5seb8jpajg1v" path="res://graphics/lights/fan_animation/00045.png" id="46_a7f4i"]
 [ext_resource type="Texture2D" uid="uid://ck014gavf5340" path="res://graphics/lights/fan_animation/00046.png" id="47_vauut"]
 [ext_resource type="Texture2D" uid="uid://dyog8ovcaurmq" path="res://graphics/lights/fan_animation/00047.png" id="48_sd0g5"]
+[ext_resource type="Texture2D" uid="uid://clduesraiko37" path="res://graphics/lights/textures/circle.png" id="49_twvp7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x3eke"]
 animations = [{
@@ -202,6 +203,12 @@ animations = [{
 }]
 
 [node name="LightFanAnimation" type="AnimatedSprite2D"]
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_x3eke")
 autoplay = "default"
-frame_progress = 0.632994
+frame_progress = 0.325027
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+energy = 5.0
+texture = ExtResource("49_twvp7")
+texture_scale = 1.25
