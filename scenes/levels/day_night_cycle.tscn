@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwlvofceo3rhh"]
+
+[ext_resource type="Script" path="res://scenes/levels/day_night_cycle.gd" id="1_rosne"]
+
+[node name="DayNightCycle" type="Node2D"]
+script = ExtResource("1_rosne")
+
+[node name="DayLight" type="DirectionalLight2D" parent="."]
+color = Color(0.470588, 0.470588, 0.470588, 1)
+range_z_max = 100
+shadow_color = Color(0, 0, 0, 0.0862745)
+shadow_filter = 1
+
+[node name="NightLight" type="DirectionalLight2D" parent="."]
+color = Color(0.705882, 0.705882, 0.705882, 1)
+energy = 0.0
+blend_mode = 1
+
+[node name="CycleTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="TransitionTimer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="timeout" from="CycleTimer" to="." method="_on_cycle_timer_timeout"]
+[connection signal="timeout" from="TransitionTimer" to="." method="_on_transition_timer_timeout"]
