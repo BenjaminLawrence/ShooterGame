@@ -17,7 +17,7 @@ energy = 0.0
 blend_mode = 1
 
 [node name="CycleTimer" type="Timer" parent="."]
-wait_time = 60.0
+wait_time = 10.0
 one_shot = true
 
 [node name="TransitionTimer" type="Timer" parent="."]
