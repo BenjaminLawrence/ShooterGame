@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://do3n007cpmlpw"]
+[gd_scene load_steps=6 format=3 uid="uid://do3n007cpmlpw"]
 
 [ext_resource type="Texture2D" uid="uid://cdbgboxvf4wmi" path="res://graphics/objects/gate.png" id="1_g62h4"]
 [ext_resource type="Script" path="res://scenes/objects/gate.gd" id="1_hbb40"]
@@ -7,16 +7,19 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nkeo3"]
 size = Vector2(836, 401)
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ynfhr"]
+polygon = PackedVector2Array(488, 718, 488, 778, 1314, 779, 1376, 768, 1432, 743, 1479, 704, 1519, 657, 1549, 601, 1560, 518, 1560, -780, 1479, -780, 1482, 533, 1461, 607, 1379, 692, 1285, 718)
+
 [node name="Gate" type="StaticBody2D"]
 collision_layer = 4
 collision_mask = 11
 script = ExtResource("1_hbb40")
 
-[node name="GateImage" type="Sprite2D" parent="."]
-texture = ExtResource("1_g62h4")
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-1437, -781, -1436, 543, -1424, 596, -1405, 643, -1374, 688, -1335, 724, -1292, 751, -1247, 768, -1194, 778, -368, 778, -368, 392, 490, 393, 490, 777, 1313, 777, 1364, 769, 1420, 746, 1469, 717, 1505, 673, 1537, 626, 1553, 577, 1561, 515, 1559, -781)
+
+[node name="GateImage" type="Sprite2D" parent="."]
+texture = ExtResource("1_g62h4")
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -31,5 +34,13 @@ rotation = 3.14159
 [node name="wall_lamp2" parent="." instance=ExtResource("3_mdv3q")]
 position = Vector2(-578, 793)
 rotation = 3.14159
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_ynfhr")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="."]
+position = Vector2(122, 0)
+scale = Vector2(-1, 1)
+occluder = SubResource("OccluderPolygon2D_ynfhr")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
