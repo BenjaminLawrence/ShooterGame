@@ -76,13 +76,13 @@ explosiveness = 0.4
 [node name="PlayerShadow" type="LightOccluder2D" parent="."]
 occluder = SubResource("OccluderPolygon2D_ny6pu")
 
-[node name="FlashLight" type="PointLight2D" parent="."]
+[node name="Flashlight" type="PointLight2D" parent="."]
 position = Vector2(17, -3)
 enabled = false
 color = Color(0.788235, 0.788235, 0, 0.74902)
 energy = 3.0
 shadow_enabled = true
-shadow_color = Color(0.321569, 0.329412, 0, 0.0196078)
+shadow_color = Color(0.321569, 0.329412, 0, 0.0470588)
 shadow_filter = 1
 shadow_filter_smooth = 3.0
 shadow_item_cull_mask = 2

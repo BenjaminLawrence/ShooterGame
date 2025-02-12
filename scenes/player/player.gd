@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 var can_laser: bool = true
 var can_grenade: bool = true
+#var can_flash_light: bool = true
 signal shoot_laser(pos, direction)
 signal throw_grenade(pos, direction)
 
@@ -33,6 +34,15 @@ func _process(_delta: float) -> void:
 		can_grenade = false
 		$GrenadeTimer.start()
 		throw_grenade.emit(pos_marker.global_position, player_direction)
+	
+	
+	# flash light
+	if Input.is_action_just_pressed("flashlight"):
+		var flash_light = $FlashLight
+		if flash_light.enabled == true:
+			flash_light.enabled = false
+		else:
+			flash_light.enabled = true
 
 
 func _on_laser_timer_timeout() -> void:
