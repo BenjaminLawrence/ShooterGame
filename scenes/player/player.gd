@@ -1,16 +1,19 @@
 extends CharacterBody2D
 
-var can_laser: bool = true
-var can_grenade: bool = true
-#var can_flash_light: bool = true
 signal shoot_laser(pos, direction)
 signal throw_grenade(pos, direction)
+
+var can_laser: bool = true
+var can_grenade: bool = true
+
+@export var max_speed: int = 500
+var speed: int = max_speed
 
 func _process(_delta: float) -> void:
 	
 	# movement
 	var direction = Input.get_vector("left", "right", "up", "down")
-	velocity = direction * 500
+	velocity = direction * speed
 	move_and_slide()
 	
 	# rotate
