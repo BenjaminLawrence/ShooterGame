@@ -1,7 +1,8 @@
-[gd_scene load_steps=33 format=4 uid="uid://p4jhn3it3efs"]
+[gd_scene load_steps=34 format=4 uid="uid://p4jhn3it3efs"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_yyfw1"]
 [ext_resource type="Texture2D" uid="uid://cdqnmmxwja2ed" path="res://graphics/ground/stones.png" id="2_3k4s8"]
+[ext_resource type="Script" path="res://scenes/levels/outside.gd" id="2_wj80y"]
 [ext_resource type="Texture2D" uid="uid://ckf84cqfuvpk0" path="res://graphics/decals/dirt_patch.png" id="3_tjl0t"]
 [ext_resource type="Texture2D" uid="uid://cpbgo8fhacrrq" path="res://graphics/tilesets/soil.png" id="4_bd13q"]
 [ext_resource type="Texture2D" uid="uid://c2jutvjeosjk0" path="res://graphics/decals/moss/moss_1.png" id="5_ph2kb"]
@@ -110,8 +111,9 @@ physics_layer_0/collision_mask = 11
 sources/0 = SubResource("TileSetAtlasSource_1iosy")
 
 [node name="Outside" instance=ExtResource("1_yyfw1")]
+script = ExtResource("2_wj80y")
 
-[node name="Ground" type="Node2D" parent="." index="1"]
+[node name="Ground" type="Node2D" parent="." index="0"]
 
 [node name="Soil" type="Sprite2D" parent="Ground" index="0"]
 texture_repeat = 2
@@ -203,7 +205,7 @@ position = Vector2(1186, 885)
 [node name="SteamVent2" parent="Ground" index="14" instance=ExtResource("16_silsl")]
 position = Vector2(-1381, 2765)
 
-[node name="Gate" parent="." index="2" instance=ExtResource("17_rt266")]
+[node name="Gate" parent="." index="1" instance=ExtResource("17_rt266")]
 position = Vector2(520, -456)
 metadata/_edit_lock_ = true
 
