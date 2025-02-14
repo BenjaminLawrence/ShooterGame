@@ -42,79 +42,7 @@ tile_map_data = PackedByteArray("AAD9/wUAAQAEAAIAAAD+/wUAAQAEAAIAAAD//wUAAQAEAAI
 tile_set = ExtResource("4_kn2ub")
 metadata/_edit_lock_ = true
 
-[node name="Lights" type="Node2D" parent="Ground" index="4"]
-metadata/_edit_lock_ = true
-
-[node name="EmergencyLight" parent="Ground/Lights" index="0" instance=ExtResource("5_tc1ru")]
-position = Vector2(-560, -580)
-rotation = -1.5708
-
-[node name="EmergencyLight3" parent="Ground/Lights" index="1" instance=ExtResource("5_tc1ru")]
-position = Vector2(2065, -580)
-rotation = 1.5708
-
-[node name="EmergencyLight4" parent="Ground/Lights" index="2" instance=ExtResource("5_tc1ru")]
-position = Vector2(2065, 200)
-rotation = 1.5708
-
-[node name="EmergencyLight2" parent="Ground/Lights" index="3" instance=ExtResource("5_tc1ru")]
-position = Vector2(-560, 200)
-rotation = -1.5708
-
-[node name="EmergencyLight5" parent="Ground/Lights" index="4" instance=ExtResource("5_tc1ru")]
-position = Vector2(780, 1400)
-
-[node name="EmergencyLight6" parent="Ground/Lights" index="5" instance=ExtResource("5_tc1ru")]
-position = Vector2(780, 1330)
-rotation = 3.14159
-
-[node name="EmergencyLight7" parent="Ground/Lights" index="6" instance=ExtResource("5_tc1ru")]
-position = Vector2(780, 5190)
-rotation = 3.14159
-
-[node name="LightFanAnimation" parent="Ground/Lights" index="7" instance=ExtResource("6_172tt")]
-position = Vector2(-2340, -3900)
-
-[node name="LightFanAnimation2" parent="Ground/Lights" index="8" instance=ExtResource("6_172tt")]
-position = Vector2(0, -3900)
-
-[node name="LightFanAnimation3" parent="Ground/Lights" index="9" instance=ExtResource("6_172tt")]
-position = Vector2(-2321, -6620)
-
-[node name="LightFanAnimation4" parent="Ground/Lights" index="10" instance=ExtResource("6_172tt")]
-position = Vector2(3, -6629)
-
-[node name="LightFanAnimation5" parent="Ground/Lights" index="11" instance=ExtResource("6_172tt")]
-position = Vector2(-1170, -5460)
-
-[node name="WarningLight" parent="Ground/Lights" index="12" instance=ExtResource("7_qjnm3")]
-position = Vector2(-1675, 1370)
-rotation = -1.5708
-
-[node name="WarningLight2" parent="Ground/Lights" index="13" instance=ExtResource("7_qjnm3")]
-position = Vector2(-1675, 200)
-rotation = -1.5708
-
-[node name="WarningLight3" parent="Ground/Lights" index="14" instance=ExtResource("7_qjnm3")]
-position = Vector2(-1675, -970)
-rotation = -1.5708
-
-[node name="WarningLight4" parent="Ground/Lights" index="15" instance=ExtResource("7_qjnm3")]
-position = Vector2(-605, -385)
-rotation = 1.5708
-
-[node name="WarningLight5" parent="Ground/Lights" index="16" instance=ExtResource("7_qjnm3")]
-position = Vector2(-605, 585)
-rotation = 1.5708
-
-[node name="SimpleLight" parent="Ground/Lights" index="17" instance=ExtResource("8_5tiam")]
-position = Vector2(2160, -10250)
-
-[node name="SimpleLight2" parent="Ground/Lights" index="18" instance=ExtResource("8_5tiam")]
-position = Vector2(2160, -8460)
-rotation = 3.14159
-
-[node name="FX" type="Node2D" parent="Ground" index="5"]
+[node name="FX" type="Node2D" parent="Ground" index="4"]
 metadata/_edit_lock_ = true
 
 [node name="SteamVent" parent="Ground/FX" index="0" instance=ExtResource("8_b8pmg")]
@@ -123,7 +51,7 @@ position = Vector2(-1370, 980)
 [node name="SteamVent2" parent="Ground/FX" index="1" instance=ExtResource("8_b8pmg")]
 position = Vector2(-1360, -180)
 
-[node name="Objects" type="Node2D" parent="Ground" index="6"]
+[node name="Objects" type="Node2D" parent="Ground" index="5"]
 metadata/_edit_lock_ = true
 
 [node name="Bed" parent="Ground/Objects" index="0" instance=ExtResource("9_26kee")]
@@ -162,7 +90,7 @@ position = Vector2(-178, -810)
 rotation = 3.14159
 scale = Vector2(0.7, 0.5)
 
-[node name="Interactables" type="Node2D" parent="Ground" index="7"]
+[node name="Interactables" type="Node2D" parent="Ground" index="6"]
 metadata/_edit_lock_ = true
 
 [node name="Crate" parent="Ground/Interactables" index="0" instance=ExtResource("11_qsvhs")]
@@ -172,14 +100,84 @@ rotation = 3.14159
 [node name="Crate2" parent="Ground/Interactables" index="1" instance=ExtResource("11_qsvhs")]
 position = Vector2(1197, -85)
 
-[node name="Player" parent="." index="2"]
+[node name="EmergencyLight" parent="Lights" index="0" instance=ExtResource("5_tc1ru")]
+position = Vector2(-560, -580)
+rotation = -1.5708
+
+[node name="EmergencyLight3" parent="Lights" index="1" instance=ExtResource("5_tc1ru")]
+position = Vector2(2065, -580)
+rotation = 1.5708
+
+[node name="EmergencyLight4" parent="Lights" index="2" instance=ExtResource("5_tc1ru")]
+position = Vector2(2065, 200)
+rotation = 1.5708
+
+[node name="EmergencyLight2" parent="Lights" index="3" instance=ExtResource("5_tc1ru")]
+position = Vector2(-560, 200)
+rotation = -1.5708
+
+[node name="EmergencyLight5" parent="Lights" index="4" instance=ExtResource("5_tc1ru")]
+position = Vector2(780, 1400)
+
+[node name="EmergencyLight6" parent="Lights" index="5" instance=ExtResource("5_tc1ru")]
+position = Vector2(780, 1330)
+rotation = -3.14159
+
+[node name="EmergencyLight7" parent="Lights" index="6" instance=ExtResource("5_tc1ru")]
+position = Vector2(780, 5190)
+rotation = -3.14159
+
+[node name="LightFanAnimation" parent="Lights" index="7" instance=ExtResource("6_172tt")]
+position = Vector2(-2340, -3900)
+
+[node name="LightFanAnimation2" parent="Lights" index="8" instance=ExtResource("6_172tt")]
+position = Vector2(0, -3900)
+
+[node name="LightFanAnimation3" parent="Lights" index="9" instance=ExtResource("6_172tt")]
+position = Vector2(-2321, -6620)
+
+[node name="LightFanAnimation4" parent="Lights" index="10" instance=ExtResource("6_172tt")]
+position = Vector2(3, -6629)
+
+[node name="LightFanAnimation5" parent="Lights" index="11" instance=ExtResource("6_172tt")]
+position = Vector2(-1170, -5460)
+
+[node name="WarningLight" parent="Lights" index="12" instance=ExtResource("7_qjnm3")]
+position = Vector2(-1675, 1370)
+rotation = -1.5708
+
+[node name="WarningLight2" parent="Lights" index="13" instance=ExtResource("7_qjnm3")]
+position = Vector2(-1675, 200)
+rotation = -1.5708
+
+[node name="WarningLight3" parent="Lights" index="14" instance=ExtResource("7_qjnm3")]
+position = Vector2(-1675, -970)
+rotation = -1.5708
+
+[node name="WarningLight4" parent="Lights" index="15" instance=ExtResource("7_qjnm3")]
+position = Vector2(-605, -385)
+rotation = 1.5708
+
+[node name="WarningLight5" parent="Lights" index="16" instance=ExtResource("7_qjnm3")]
+position = Vector2(-605, 585)
+rotation = 1.5708
+
+[node name="SimpleLight" parent="Lights" index="17" instance=ExtResource("8_5tiam")]
+position = Vector2(2160, -10250)
+
+[node name="SimpleLight2" parent="Lights" index="18" instance=ExtResource("8_5tiam")]
+position = Vector2(2160, -8460)
+rotation = -3.14159
+
+[node name="Player" parent="." index="3"]
 position = Vector2(780, 4676)
 metadata/_edit_group_ = true
 
-[node name="BackgroundMusic" parent="." index="3"]
-stream = ExtResource("9_a155e")
-volume_db = -20.0
-
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
+visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
+
+[node name="BackgroundMusic" parent="." index="5"]
+stream = ExtResource("9_a155e")
+volume_db = -20.0

@@ -9,6 +9,8 @@ script = ExtResource("1_dcbrs")
 
 [node name="Ground" type="Node2D" parent="."]
 
+[node name="Lights" type="Node2D" parent="."]
+
 [node name="Projectiles" type="Node2D" parent="."]
 metadata/_edit_lock_ = true
 
