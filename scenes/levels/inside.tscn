@@ -141,8 +141,8 @@ visible = false
 
 [node name="BackgroundMusic" parent="." index="3"]
 stream = ExtResource("9_a155e")
+volume_db = -20.0
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
-visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
