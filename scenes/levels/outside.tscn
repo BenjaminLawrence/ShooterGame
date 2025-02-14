@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://scy8ng1pdgb6" path="res://graphics/tilesets/outside_walls.png" id="10_yjj3m"]
 [ext_resource type="PackedScene" uid="uid://cy1jjm6hupx7w" path="res://scenes/houses/house.tscn" id="11_gw3t3"]
 [ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/objects/bed.tscn" id="12_qt2xu"]
-[ext_resource type="PackedScene" uid="uid://bf46st1olmhyi" path="res://scenes/objects/toilet.tscn" id="13_ctt8l"]
+[ext_resource type="PackedScene" uid="uid://cx2dls8hvkxo4" path="res://scenes/objects/toilet.tscn" id="13_ctt8l"]
 [ext_resource type="PackedScene" uid="uid://ddhuvx2xij1bj" path="res://scenes/objects/light_fan_animation.tscn" id="14_ufw46"]
 [ext_resource type="PackedScene" uid="uid://cucgcq2w8im1j" path="res://scenes/objects/billboard.tscn" id="15_cvq1o"]
 [ext_resource type="PackedScene" uid="uid://b3cple8urvy6j" path="res://scenes/objects/steam_vent.tscn" id="16_silsl"]
