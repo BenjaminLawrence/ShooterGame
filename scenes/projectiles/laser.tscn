@@ -25,3 +25,5 @@ position = Vector2(0, -36)
 color = Color(0, 1, 1, 0.490196)
 energy = 0.5
 texture = ExtResource("3_8lyuj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
