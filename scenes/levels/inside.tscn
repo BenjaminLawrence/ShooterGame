@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=13 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cwilyvmosy44" path="res://scenes/objects/heavy_vent.tscn" id="8_b8pmg"]
 [ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/objects/bed.tscn" id="9_26kee"]
 [ext_resource type="AudioStream" uid="uid://bf1uf1gg82qxh" path="res://audio/the_black_company.mp3" id="9_a155e"]
+[ext_resource type="PackedScene" uid="uid://dxbly6n6ddl7m" path="res://scenes/objects/crate.tscn" id="11_qsvhs"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
 
@@ -144,6 +145,16 @@ scale = Vector2(0.7, 0.5)
 position = Vector2(-178, -810)
 rotation = 3.14159
 scale = Vector2(0.7, 0.5)
+
+[node name="Interactables" type="Node2D" parent="Ground" index="6"]
+metadata/_edit_lock_ = true
+
+[node name="Crate" parent="Ground/Interactables" index="0" instance=ExtResource("11_qsvhs")]
+position = Vector2(-1170, 1980)
+rotation = 3.14159
+
+[node name="Crate2" parent="Ground/Interactables" index="1" instance=ExtResource("11_qsvhs")]
+position = Vector2(1197, -85)
 
 [node name="Player" parent="." index="2"]
 position = Vector2(-7, -534)
