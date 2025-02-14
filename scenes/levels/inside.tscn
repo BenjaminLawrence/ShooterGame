@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=7 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
 [ext_resource type="TileSet" uid="uid://b6vfbnwigme" path="res://scenes/levels/inner_walls.tres" id="3_dyi4g"]
 [ext_resource type="TileSet" uid="uid://brvdo6b77w3xw" path="res://scenes/levels/outer_walls.tres" id="4_kn2ub"]
 [ext_resource type="PackedScene" uid="uid://df2vcs3nbb3m3" path="res://scenes/objects/emergency_light.tscn" id="5_tc1ru"]
+[ext_resource type="PackedScene" uid="uid://ddhuvx2xij1bj" path="res://scenes/objects/light_fan_animation.tscn" id="6_172tt"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
 
@@ -49,6 +50,18 @@ position = Vector2(780, 1400)
 position = Vector2(780, 1330)
 rotation = 3.14159
 
+[node name="LightFanAnimation" parent="Ground/Lights" index="6" instance=ExtResource("6_172tt")]
+position = Vector2(-2340, -3900)
+
+[node name="LightFanAnimation2" parent="Ground/Lights" index="7" instance=ExtResource("6_172tt")]
+position = Vector2(0, -3900)
+
+[node name="LightFanAnimation3" parent="Ground/Lights" index="8" instance=ExtResource("6_172tt")]
+position = Vector2(-2321, -6620)
+
+[node name="LightFanAnimation4" parent="Ground/Lights" index="9" instance=ExtResource("6_172tt")]
+position = Vector2(3, -6629)
+
 [node name="Player" parent="." index="2"]
 position = Vector2(-7, -534)
 metadata/_edit_lock_ = true
@@ -57,6 +70,5 @@ metadata/_edit_lock_ = true
 visible = false
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
-visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
