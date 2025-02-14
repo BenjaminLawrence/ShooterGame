@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://clyjnhg4t2xcm"]
+[gd_scene load_steps=35 format=4 uid="uid://clyjnhg4t2xcm"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_dcbrs"]
 [ext_resource type="Texture2D" uid="uid://cdqnmmxwja2ed" path="res://graphics/ground/stones.png" id="2_5xrhq"]
@@ -20,7 +20,6 @@
 [ext_resource type="PackedScene" uid="uid://b3cple8urvy6j" path="res://scenes/objects/steam_vent.tscn" id="18_mwtdy"]
 [ext_resource type="PackedScene" uid="uid://bwlvofceo3rhh" path="res://scenes/levels/day_night_cycle.tscn" id="19_3lm2b"]
 [ext_resource type="PackedScene" uid="uid://ddhuvx2xij1bj" path="res://scenes/objects/light_fan_animation.tscn" id="20_wpbvb"]
-[ext_resource type="PackedScene" uid="uid://c5c1vsfyrpf3w" path="res://scenes/enemies/drone.tscn" id="21_6rqs3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qadh5"]
 resource_name = "Soil"
@@ -229,9 +228,6 @@ autoplay = true
 
 [node name="DayNightCycle" parent="." instance=ExtResource("19_3lm2b")]
 metadata/_edit_lock_ = true
-
-[node name="Drone" parent="." instance=ExtResource("21_6rqs3")]
-position = Vector2(-1157, 833)
 
 [connection signal="player_entered" from="Ground/House" to="." method="_on_house_player_entered"]
 [connection signal="player_exited" from="Ground/House" to="." method="_on_house_player_exited"]
