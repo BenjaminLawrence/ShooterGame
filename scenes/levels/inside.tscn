@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=17 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
@@ -13,6 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/objects/bed.tscn" id="9_26kee"]
 [ext_resource type="AudioStream" uid="uid://bf1uf1gg82qxh" path="res://audio/the_black_company.mp3" id="9_a155e"]
 [ext_resource type="PackedScene" uid="uid://dxbly6n6ddl7m" path="res://scenes/objects/crate.tscn" id="11_qsvhs"]
+[ext_resource type="Texture2D" uid="uid://ckk84a6d6o7k1" path="res://graphics/lights/overlays/infrastructure.png" id="13_38xim"]
+[ext_resource type="Texture2D" uid="uid://dl07xtwmmu702" path="res://graphics/lights/overlays/lattice.png" id="14_wgrow"]
+[ext_resource type="Texture2D" uid="uid://bca10fuh2mnxj" path="res://graphics/lights/overlays/hole.png" id="15_4grk8"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
 
@@ -124,7 +127,7 @@ position = Vector2(780, 1330)
 rotation = -3.14159
 
 [node name="EmergencyLight7" parent="Lights" index="6" instance=ExtResource("5_tc1ru")]
-position = Vector2(1379, 4104)
+position = Vector2(1577, 3838)
 rotation = 0.785398
 
 [node name="LightFanAnimation" parent="Lights" index="7" instance=ExtResource("6_172tt")]
@@ -169,13 +172,40 @@ position = Vector2(2160, -10250)
 position = Vector2(2160, -8460)
 rotation = -3.14159
 
+[node name="Infrastructure" type="Sprite2D" parent="Lights" index="19"]
+modulate = Color(1, 1, 1, 0.0784314)
+position = Vector2(796.593, 3386)
+rotation = 1.5708
+scale = Vector2(1, 1.91521)
+texture = ExtResource("13_38xim")
+
+[node name="Infrastructure2" type="Sprite2D" parent="Lights" index="20"]
+modulate = Color(1, 1, 1, 0.117647)
+position = Vector2(777, 593)
+rotation = 1.5708
+scale = Vector2(1, 1.91521)
+texture = ExtResource("14_wgrow")
+
+[node name="Infrastructure3" type="Sprite2D" parent="Lights" index="21"]
+modulate = Color(1, 1, 1, 0.117647)
+position = Vector2(781, -194)
+rotation = 1.5708
+scale = Vector2(1, 1.91521)
+texture = ExtResource("14_wgrow")
+
+[node name="Infrastructure4" type="Sprite2D" parent="Lights" index="22"]
+modulate = Color(1, 1, 1, 0.117647)
+position = Vector2(1327, 1745)
+rotation = 1.5708
+scale = Vector2(2, 2)
+texture = ExtResource("15_4grk8")
+
 [node name="Player" parent="." index="3"]
 position = Vector2(780, 4676)
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
-visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
 
