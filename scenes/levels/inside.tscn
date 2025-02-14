@@ -211,7 +211,6 @@ position = Vector2(2334, 4685)
 metadata/_edit_group_ = true
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
-visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
 
