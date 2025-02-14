@@ -4,7 +4,5 @@
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
 
-[node name="Ground" type="Node2D" parent="." index="0"]
-
-[node name="Player" parent="." index="1"]
+[node name="Player" parent="." index="2"]
 metadata/_edit_lock_ = true

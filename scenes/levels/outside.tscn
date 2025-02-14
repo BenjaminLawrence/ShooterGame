@@ -114,8 +114,6 @@ sources/0 = SubResource("TileSetAtlasSource_1iosy")
 [node name="Outside" instance=ExtResource("1_yyfw1")]
 script = ExtResource("2_wj80y")
 
-[node name="Ground" type="Node2D" parent="." index="0"]
-
 [node name="Soil" type="Sprite2D" parent="Ground" index="0"]
 texture_repeat = 2
 position = Vector2(681, 3046)
@@ -206,22 +204,22 @@ position = Vector2(1186, 885)
 [node name="SteamVent2" parent="Ground" index="14" instance=ExtResource("16_silsl")]
 position = Vector2(-1381, 2765)
 
-[node name="Gate" parent="." index="1" instance=ExtResource("17_rt266")]
+[node name="Gate" parent="Ground" index="15" instance=ExtResource("17_rt266")]
 position = Vector2(520, -456)
 metadata/_edit_lock_ = true
 
-[node name="Crate" parent="." index="2" instance=ExtResource("19_drg2p")]
+[node name="Crate" parent="Ground" index="16" instance=ExtResource("19_drg2p")]
 position = Vector2(-405, 414)
 
-[node name="Crate2" parent="." index="3" instance=ExtResource("19_drg2p")]
+[node name="Crate2" parent="Ground" index="17" instance=ExtResource("19_drg2p")]
 position = Vector2(3837, 272)
 rotation = 0.863938
 
-[node name="Player" parent="." index="4"]
+[node name="Player" parent="." index="2"]
 metadata/_edit_lock_ = true
 
-[node name="DayNightCycle" parent="." index="7" instance=ExtResource("18_trjke")]
+[node name="DayNightCycle" parent="." index="3" instance=ExtResource("18_trjke")]
 
 [connection signal="player_entered" from="Ground/House" to="." method="_on_house_player_entered"]
 [connection signal="player_exited" from="Ground/House" to="." method="_on_house_player_exited"]
-[connection signal="player_entered_gate" from="Gate" to="." method="_on_gate_player_entered_gate"]
+[connection signal="player_entered_gate" from="Ground/Gate" to="." method="_on_gate_player_entered_gate"]
