@@ -174,7 +174,7 @@ position = Vector2(3, -6629)
 position = Vector2(-1170, -5460)
 
 [node name="Infrastructure" type="Sprite2D" parent="Lights" index="5"]
-modulate = Color(1, 1, 1, 0.0784314)
+modulate = Color(1, 1, 1, 0.235294)
 position = Vector2(796.593, 3386)
 rotation = 1.5708
 scale = Vector2(1, 1.91521)
