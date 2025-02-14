@@ -79,8 +79,8 @@ occluder = SubResource("OccluderPolygon2D_ny6pu")
 [node name="FlashLight" type="PointLight2D" parent="."]
 position = Vector2(17, -3)
 enabled = false
-color = Color(0.705113, 0.705113, 3.85046e-07, 0.196078)
-energy = 3.0
+color = Color(0.675132, 0.675132, 0, 0.392157)
+energy = 5.0
 shadow_enabled = true
 shadow_color = Color(0.268556, 0.268556, 1.92523e-07, 0)
 shadow_filter = 1
