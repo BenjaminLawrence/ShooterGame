@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx2dls8hvkxo4"]
+
+[ext_resource type="PackedScene" uid="uid://b2esjugq1b4p1" path="res://scenes/objects/item_container_scene.tscn" id="1_c2rft"]
+[ext_resource type="Texture2D" uid="uid://dupua6r7t53vh" path="res://graphics/objects/toilet.png" id="1_ry67n"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_75s6t"]
+radius = 100.0
+height = 230.0
+
+[node name="Toilet" instance=ExtResource("1_c2rft")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("1_ry67n")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CapsuleShape2D_75s6t")
