@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=8 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
@@ -6,6 +6,7 @@
 [ext_resource type="TileSet" uid="uid://brvdo6b77w3xw" path="res://scenes/levels/outer_walls.tres" id="4_kn2ub"]
 [ext_resource type="PackedScene" uid="uid://df2vcs3nbb3m3" path="res://scenes/objects/emergency_light.tscn" id="5_tc1ru"]
 [ext_resource type="PackedScene" uid="uid://ddhuvx2xij1bj" path="res://scenes/objects/light_fan_animation.tscn" id="6_172tt"]
+[ext_resource type="PackedScene" uid="uid://bq5xcbtj6yda7" path="res://scenes/objects/warning_light.tscn" id="7_qjnm3"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
 
@@ -62,6 +63,26 @@ position = Vector2(-2321, -6620)
 [node name="LightFanAnimation4" parent="Ground/Lights" index="9" instance=ExtResource("6_172tt")]
 position = Vector2(3, -6629)
 
+[node name="WarningLight" parent="Ground/Lights" index="10" instance=ExtResource("7_qjnm3")]
+position = Vector2(-1675, 1370)
+rotation = -1.5708
+
+[node name="WarningLight2" parent="Ground/Lights" index="11" instance=ExtResource("7_qjnm3")]
+position = Vector2(-1675, 200)
+rotation = -1.5708
+
+[node name="WarningLight3" parent="Ground/Lights" index="12" instance=ExtResource("7_qjnm3")]
+position = Vector2(-1675, -970)
+rotation = -1.5708
+
+[node name="WarningLight4" parent="Ground/Lights" index="13" instance=ExtResource("7_qjnm3")]
+position = Vector2(-605, -385)
+rotation = 1.5708
+
+[node name="WarningLight5" parent="Ground/Lights" index="14" instance=ExtResource("7_qjnm3")]
+position = Vector2(-605, 585)
+rotation = 1.5708
+
 [node name="Player" parent="." index="2"]
 position = Vector2(-7, -534)
 metadata/_edit_lock_ = true
@@ -70,5 +91,6 @@ metadata/_edit_lock_ = true
 visible = false
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
+visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
