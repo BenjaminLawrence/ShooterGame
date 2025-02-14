@@ -201,9 +201,8 @@ scale = Vector2(2, 2)
 texture = ExtResource("15_4grk8")
 
 [node name="Player" parent="." index="3"]
-position = Vector2(780, 4676)
+position = Vector2(2334, 4685)
 metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
 color = Color(1, 1, 1, 0.705882)
