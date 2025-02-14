@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=12 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://df2vcs3nbb3m3" path="res://scenes/objects/emergency_light.tscn" id="5_tc1ru"]
 [ext_resource type="PackedScene" uid="uid://ddhuvx2xij1bj" path="res://scenes/objects/light_fan_animation.tscn" id="6_172tt"]
 [ext_resource type="PackedScene" uid="uid://bq5xcbtj6yda7" path="res://scenes/objects/warning_light.tscn" id="7_qjnm3"]
+[ext_resource type="PackedScene" uid="uid://c54cxflfn07vh" path="res://scenes/objects/simple_light.tscn" id="8_5tiam"]
 [ext_resource type="PackedScene" uid="uid://cwilyvmosy44" path="res://scenes/objects/heavy_vent.tscn" id="8_b8pmg"]
 [ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/objects/bed.tscn" id="9_26kee"]
 [ext_resource type="AudioStream" uid="uid://bf1uf1gg82qxh" path="res://audio/the_black_company.mp3" id="9_a155e"]
@@ -88,6 +89,13 @@ rotation = 1.5708
 [node name="WarningLight5" parent="Ground/Lights" index="14" instance=ExtResource("7_qjnm3")]
 position = Vector2(-605, 585)
 rotation = 1.5708
+
+[node name="SimpleLight" parent="Ground/Lights" index="15" instance=ExtResource("8_5tiam")]
+position = Vector2(2160, -10250)
+
+[node name="SimpleLight2" parent="Ground/Lights" index="16" instance=ExtResource("8_5tiam")]
+position = Vector2(2160, -8460)
+rotation = 3.14159
 
 [node name="FX" type="Node2D" parent="Ground" index="4"]
 metadata/_edit_lock_ = true
