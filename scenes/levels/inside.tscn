@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=11 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ddhuvx2xij1bj" path="res://scenes/objects/light_fan_animation.tscn" id="6_172tt"]
 [ext_resource type="PackedScene" uid="uid://bq5xcbtj6yda7" path="res://scenes/objects/warning_light.tscn" id="7_qjnm3"]
 [ext_resource type="PackedScene" uid="uid://cwilyvmosy44" path="res://scenes/objects/heavy_vent.tscn" id="8_b8pmg"]
+[ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/objects/bed.tscn" id="9_26kee"]
 [ext_resource type="AudioStream" uid="uid://bf1uf1gg82qxh" path="res://audio/the_black_company.mp3" id="9_a155e"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
@@ -93,6 +94,44 @@ position = Vector2(-1370, 980)
 [node name="SteamVent2" parent="Ground/FX" index="1" instance=ExtResource("8_b8pmg")]
 position = Vector2(-1360, -180)
 
+[node name="Objects" type="Node2D" parent="Ground" index="5"]
+
+[node name="Bed" parent="Ground/Objects" index="0" instance=ExtResource("9_26kee")]
+position = Vector2(1738, -811)
+scale = Vector2(0.7, 0.5)
+
+[node name="Bed2" parent="Ground/Objects" index="1" instance=ExtResource("9_26kee")]
+position = Vector2(1738, -308)
+scale = Vector2(0.7, 0.5)
+
+[node name="Bed3" parent="Ground/Objects" index="2" instance=ExtResource("9_26kee")]
+position = Vector2(1738, -82)
+scale = Vector2(0.7, 0.5)
+
+[node name="Bed4" parent="Ground/Objects" index="3" instance=ExtResource("9_26kee")]
+position = Vector2(1737, 472)
+scale = Vector2(0.7, 0.5)
+
+[node name="Bed5" parent="Ground/Objects" index="4" instance=ExtResource("9_26kee")]
+position = Vector2(-177, 472)
+rotation = 3.14159
+scale = Vector2(0.7, 0.5)
+
+[node name="Bed6" parent="Ground/Objects" index="5" instance=ExtResource("9_26kee")]
+position = Vector2(-178, -82)
+rotation = 3.14159
+scale = Vector2(0.7, 0.5)
+
+[node name="Bed7" parent="Ground/Objects" index="6" instance=ExtResource("9_26kee")]
+position = Vector2(-177, -309)
+rotation = 3.14159
+scale = Vector2(0.7, 0.5)
+
+[node name="Bed8" parent="Ground/Objects" index="7" instance=ExtResource("9_26kee")]
+position = Vector2(-178, -810)
+rotation = 3.14159
+scale = Vector2(0.7, 0.5)
+
 [node name="Player" parent="." index="2"]
 position = Vector2(-7, -534)
 metadata/_edit_lock_ = true
@@ -104,5 +143,6 @@ visible = false
 stream = ExtResource("9_a155e")
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
+visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
