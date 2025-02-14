@@ -42,6 +42,13 @@ rotation = 1.5708
 position = Vector2(-560, 200)
 rotation = -1.5708
 
+[node name="EmergencyLight5" parent="Ground/Lights" index="4" instance=ExtResource("5_tc1ru")]
+position = Vector2(780, 1400)
+
+[node name="EmergencyLight6" parent="Ground/Lights" index="5" instance=ExtResource("5_tc1ru")]
+position = Vector2(780, 1330)
+rotation = 3.14159
+
 [node name="Player" parent="." index="2"]
 position = Vector2(-7, -534)
 metadata/_edit_lock_ = true
@@ -50,5 +57,6 @@ metadata/_edit_lock_ = true
 visible = false
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
+visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
