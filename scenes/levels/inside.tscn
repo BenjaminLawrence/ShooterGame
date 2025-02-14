@@ -1,7 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=3 format=3 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
+[ext_resource type="PackedScene" uid="uid://b2esjugq1b4p1" path="res://scenes/levels/item_container_scene.tscn" id="2_htvol"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
 
 [node name="Ground" type="Node2D" parent="." index="0"]
+
+[node name="ItemContainerScene" parent="Ground" index="0" instance=ExtResource("2_htvol")]
+position = Vector2(1153, 242)
+rotation = -2.49931
+
+[node name="ItemContainerScene2" parent="Ground" index="1" instance=ExtResource("2_htvol")]
+position = Vector2(1526, 854)
+rotation = 2.25147
+
+[node name="ItemContainerScene3" parent="Ground" index="2" instance=ExtResource("2_htvol")]
+position = Vector2(466, 1123)
+rotation = 0.270526
+
+[node name="Player" parent="." index="1"]
+metadata/_edit_lock_ = true
