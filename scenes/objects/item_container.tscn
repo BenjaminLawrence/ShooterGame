@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://b2esjugq1b4p1"]
 
-[ext_resource type="Script" path="res://scenes/objects/item_container_scene.gd" id="1_tomrh"]
+[ext_resource type="Script" path="res://scenes/objects/item_container.gd" id="1_5vlbn"]
 
-[node name="ItemContainerScene" type="StaticBody2D"]
+[node name="ItemContainer" type="StaticBody2D"]
 collision_layer = 4
 collision_mask = 11
-script = ExtResource("1_tomrh")
+script = ExtResource("1_5vlbn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
