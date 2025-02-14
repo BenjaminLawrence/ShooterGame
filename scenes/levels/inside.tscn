@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=19 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
+[ext_resource type="Script" path="res://scenes/levels/inside.gd" id="2_6edxf"]
 [ext_resource type="Texture2D" uid="uid://bm7sc0gwcd2bv" path="res://graphics/ground/dirt.png" id="2_ajtp3"]
 [ext_resource type="TileSet" uid="uid://b6vfbnwigme" path="res://scenes/levels/inner_walls.tres" id="3_dyi4g"]
 [ext_resource type="TileSet" uid="uid://brvdo6b77w3xw" path="res://scenes/levels/outer_walls.tres" id="4_kn2ub"]
@@ -17,7 +18,11 @@
 [ext_resource type="Texture2D" uid="uid://dl07xtwmmu702" path="res://graphics/lights/overlays/lattice.png" id="14_wgrow"]
 [ext_resource type="Texture2D" uid="uid://bca10fuh2mnxj" path="res://graphics/lights/overlays/hole.png" id="15_4grk8"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qmffj"]
+size = Vector2(662, 726)
+
 [node name="Inside" instance=ExtResource("1_wf8u8")]
+script = ExtResource("2_6edxf")
 
 [node name="Ground" parent="." index="0"]
 metadata/_edit_lock_ = true
@@ -206,9 +211,19 @@ position = Vector2(2334, 4685)
 metadata/_edit_group_ = true
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
+visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
 
 [node name="BackgroundMusic" parent="." index="5"]
 stream = ExtResource("9_a155e")
 volume_db = -20.0
+
+[node name="ExitGateArea" type="Area2D" parent="." index="6"]
+position = Vector2(2534, 4689)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitGateArea" index="0"]
+position = Vector2(265, -8)
+shape = SubResource("RectangleShape2D_qmffj")
+
+[connection signal="body_entered" from="ExitGateArea" to="." method="_on_exit_gate_area_body_entered"]
