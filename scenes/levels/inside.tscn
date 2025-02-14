@@ -1,8 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=5 format=3 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
+[ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
+[ext_resource type="TileSet" uid="uid://b6vfbnwigme" path="res://scenes/levels/inner_walls.tres" id="3_dyi4g"]
+[ext_resource type="TileSet" uid="uid://brvdo6b77w3xw" path="res://scenes/levels/outer_walls.tres" id="4_kn2ub"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
+
+[node name="Floor" type="TileMapLayer" parent="Ground" index="0"]
+tile_set = ExtResource("2_3gmub")
+
+[node name="Inner_Walls" type="TileMapLayer" parent="Ground" index="1"]
+tile_set = ExtResource("3_dyi4g")
+
+[node name="Outer_Walls" type="TileMapLayer" parent="Ground" index="2"]
+tile_set = ExtResource("4_kn2ub")
 
 [node name="Player" parent="." index="2"]
 metadata/_edit_lock_ = true
