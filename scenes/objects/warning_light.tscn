@@ -13,7 +13,7 @@ polygon = PackedVector2Array(-77, 17, -85, 16, -92, 13, -97, 7, -99, 0, -97, -7,
 
 [sub_resource type="Animation" id="Animation_hpf1b"]
 resource_name = "Pulsing"
-length = 2.0
+length = 3.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -22,10 +22,10 @@ tracks/0/path = NodePath("PointLight2D:energy")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.966667, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [4.0, 1.0, 4.0]
+"values": [2.0, 0.0, 0.0, 2.0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -34,10 +34,10 @@ tracks/1/path = NodePath("PointLight2D:texture_scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.966667, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [4.0, 1.0, 4.0]
+"values": [2.0, 1.0, 1.0, 2.0]
 }
 
 [sub_resource type="Animation" id="Animation_fhveg"]
@@ -74,6 +74,7 @@ _data = {
 }
 
 [node name="WarningLight" type="StaticBody2D"]
+scale = Vector2(0.5, 0.5)
 collision_layer = 4
 collision_mask = 11
 script = ExtResource("1_2ijsv")
@@ -89,7 +90,7 @@ texture = ExtResource("2_ff0k3")
 color = Color(0.823529, 0.588235, 0.0196078, 0.823529)
 energy = 3.0
 shadow_enabled = true
-shadow_color = Color(0.823529, 0.588235, 0.0196078, 0.0823529)
+shadow_color = Color(0.188824, 0.123561, 0.0010098, 0.054902)
 shadow_filter_smooth = 1.0
 texture = ExtResource("3_154kc")
 texture_scale = 4.0
