@@ -71,30 +71,33 @@ position = Vector2(-2321, -6620)
 [node name="LightFanAnimation4" parent="Ground/Lights" index="9" instance=ExtResource("6_172tt")]
 position = Vector2(3, -6629)
 
-[node name="WarningLight" parent="Ground/Lights" index="10" instance=ExtResource("7_qjnm3")]
+[node name="LightFanAnimation5" parent="Ground/Lights" index="10" instance=ExtResource("6_172tt")]
+position = Vector2(-1170, -5460)
+
+[node name="WarningLight" parent="Ground/Lights" index="11" instance=ExtResource("7_qjnm3")]
 position = Vector2(-1675, 1370)
 rotation = -1.5708
 
-[node name="WarningLight2" parent="Ground/Lights" index="11" instance=ExtResource("7_qjnm3")]
+[node name="WarningLight2" parent="Ground/Lights" index="12" instance=ExtResource("7_qjnm3")]
 position = Vector2(-1675, 200)
 rotation = -1.5708
 
-[node name="WarningLight3" parent="Ground/Lights" index="12" instance=ExtResource("7_qjnm3")]
+[node name="WarningLight3" parent="Ground/Lights" index="13" instance=ExtResource("7_qjnm3")]
 position = Vector2(-1675, -970)
 rotation = -1.5708
 
-[node name="WarningLight4" parent="Ground/Lights" index="13" instance=ExtResource("7_qjnm3")]
+[node name="WarningLight4" parent="Ground/Lights" index="14" instance=ExtResource("7_qjnm3")]
 position = Vector2(-605, -385)
 rotation = 1.5708
 
-[node name="WarningLight5" parent="Ground/Lights" index="14" instance=ExtResource("7_qjnm3")]
+[node name="WarningLight5" parent="Ground/Lights" index="15" instance=ExtResource("7_qjnm3")]
 position = Vector2(-605, 585)
 rotation = 1.5708
 
-[node name="SimpleLight" parent="Ground/Lights" index="15" instance=ExtResource("8_5tiam")]
+[node name="SimpleLight" parent="Ground/Lights" index="16" instance=ExtResource("8_5tiam")]
 position = Vector2(2160, -10250)
 
-[node name="SimpleLight2" parent="Ground/Lights" index="16" instance=ExtResource("8_5tiam")]
+[node name="SimpleLight2" parent="Ground/Lights" index="17" instance=ExtResource("8_5tiam")]
 position = Vector2(2160, -8460)
 rotation = 3.14159
 
