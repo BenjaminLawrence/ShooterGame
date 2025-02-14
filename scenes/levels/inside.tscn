@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
-[ext_resource type="PackedScene" uid="uid://b2esjugq1b4p1" path="res://scenes/levels/item_container_scene.tscn" id="2_htvol"]
+[ext_resource type="PackedScene" uid="uid://b2esjugq1b4p1" path="res://scenes/objects/item_container_scene.tscn" id="2_htvol"]
 
 [node name="Inside" instance=ExtResource("1_wf8u8")]
 
