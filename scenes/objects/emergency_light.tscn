@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3 uid="uid://df2vcs3nbb3m3"]
+
+[ext_resource type="Texture2D" uid="uid://bxvmobsgeeeai" path="res://graphics/objects/light.png" id="1_mleq5"]
+[ext_resource type="Script" path="res://scenes/objects/emergency_light.gd" id="1_x6e0y"]
+[ext_resource type="Texture2D" uid="uid://clduesraiko37" path="res://graphics/lights/textures/circle.png" id="2_5m34c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6wb22"]
+radius = 17.0
+height = 196.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ghciu"]
+polygon = PackedVector2Array(-77, 17, -85, 16, -92, 13, -97, 7, -99, 0, -97, -7, -92, -13, -86, -16, -77, -17, 77, -17, 87, -16, 93, -13, 97, -7, 98, 0, 96, 8, 91, 13, 85, 16, 77, 17, 77, -4, 73, -9, 68, -12, -68, -12, -74, -9, -77, -4)
+
+[sub_resource type="Animation" id="Animation_hpf1b"]
+resource_name = "Pulsing"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.966667, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [3.0, 0.0, 3.0]
+}
+
+[sub_resource type="Animation" id="Animation_fhveg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v85jb"]
+_data = {
+"Pulsing": SubResource("Animation_hpf1b"),
+"RESET": SubResource("Animation_fhveg")
+}
+
+[node name="EmergencyLight" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 11
+script = ExtResource("1_x6e0y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_6wb22")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mleq5")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(1, 0, 0, 0.831373)
+energy = 3.0
+shadow_enabled = true
+shadow_color = Color(0.266667, 0, 0, 0.0352941)
+shadow_filter = 1
+shadow_filter_smooth = 1.5
+texture = ExtResource("2_5m34c")
+texture_scale = 3.0
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_ghciu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v85jb")
+}
