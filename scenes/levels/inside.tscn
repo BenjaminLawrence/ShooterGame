@@ -134,7 +134,6 @@ rotation = -3.14159
 [node name="EmergencyLight7" parent="Ground" index="13" instance=ExtResource("5_tc1ru")]
 position = Vector2(311, 5152)
 rotation = -2.35619
-scale = Vector2(1, 1)
 
 [node name="WarningLight" parent="Ground" index="14" instance=ExtResource("7_qjnm3")]
 position = Vector2(-1675, 1370)
