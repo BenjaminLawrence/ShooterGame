@@ -213,15 +213,15 @@ metadata/_edit_group_ = true
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
 
-[node name="BackgroundMusic" parent="." index="5"]
-stream = ExtResource("9_a155e")
-volume_db = -20.0
-
 [node name="ExitGateArea" type="Area2D" parent="." index="6"]
 position = Vector2(2534, 4689)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitGateArea" index="0"]
 position = Vector2(265, -8)
 shape = SubResource("RectangleShape2D_qmffj")
+
+[node name="BackgroundMusic" parent="." index="7"]
+stream = ExtResource("9_a155e")
+volume_db = -20.0
 
 [connection signal="body_entered" from="ExitGateArea" to="." method="_on_exit_gate_area_body_entered"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://clyjnhg4t2xcm"]
+[gd_scene load_steps=5 format=3 uid="uid://clyjnhg4t2xcm"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_dcbrs"]
+[ext_resource type="PackedScene" uid="uid://bi3cs8gyo40ib" path="res://scenes/user_interface/ui.tscn" id="3_dnvqt"]
 [ext_resource type="PackedScene" uid="uid://32o331tm5duu" path="res://scenes/player/player.tscn" id="4_wtdwt"]
 [ext_resource type="AudioStream" uid="uid://df6r6yrejusjo" path="res://audio/battleThemeA.mp3" id="6_42mqn"]
 
@@ -21,6 +22,8 @@ position = Vector2(512, 517)
 zoom = Vector2(0.6, 0.6)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
+
+[node name="UI" parent="." instance=ExtResource("3_dnvqt")]
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_42mqn")
