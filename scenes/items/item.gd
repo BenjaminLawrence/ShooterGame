@@ -15,7 +15,11 @@ func _ready():
 func _process(delta: float):
 	rotation += rotation_speed * delta
 
-
 func _on_body_entered(body: Node2D) -> void:
-	body.add_item(type)
+	if type == 'laser':
+		Globals.laser_amount += 5
+	elif type == 'grenade':
+		Globals.grenade_amount += 1
+	elif type == 'health':
+		Globals.health += 50
 	queue_free()
