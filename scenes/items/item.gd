@@ -15,7 +15,7 @@ func _ready():
 func _process(delta: float):
 	rotation += rotation_speed * delta
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(_body: Node2D) -> void:
 	if type == 'laser':
 		Globals.laser_amount += 5
 	elif type == 'grenade':
