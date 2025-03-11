@@ -65,6 +65,6 @@ func add_item(type: String) -> void:
 	elif type == 'grenade':
 		Globals.grenade_amount += 2
 	elif type == 'health':
-		print("Picked up health")
+		Globals.health += 50
 	update_stats.emit()
 		
