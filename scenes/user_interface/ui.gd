@@ -10,9 +10,7 @@ var red: Color = Color(0.9,0,0,1)
 @onready var health_bar: TextureProgressBar = $MarginContainer/TextureProgressBar
 
 func _ready() -> void:
-	Globals.connect("laser_amount_change", update_laser_text)
-	Globals.connect("grenade_amount_change", update_grenade_text)
-	Globals.connect("health_change", update_health_bar)
+	Globals.connect("stat_change", update_stat_trackers)
 	update_laser_text()
 	update_grenade_text()
 	update_health_bar()
@@ -27,6 +25,11 @@ func update_grenade_text():
 
 func update_health_bar():
 	health_bar.value = Globals.health
+
+func update_stat_trackers():
+	update_laser_text()
+	update_grenade_text()
+	update_health_bar()
 
 func update_color(amount: int, label: Label, icon: TextureRect) -> void:
 	if amount > 0:
