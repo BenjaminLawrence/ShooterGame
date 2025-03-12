@@ -613,6 +613,293 @@ position = Vector2(507, -115)
 rotation = -0.0785398
 texture = ExtResource("32_ffu3w")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="Infestation" index="58"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D" index="0"]
+polygon = PackedVector2Array(-1857, -6261, -1905, -6244, -1941, -6205, -1936, -6157, -1908, -6126, -1919, -6089, -1920, -6036, -1895, -6000, -1833, -5984, -1805, -6006, -1784, -6052, -1789, -6079, -1748, -6088, -1716, -6086, -1673, -6113, -1665, -6156, -1678, -6196, -1707, -6225, -1742, -6233, -1742, -6261, -1741, -6306, -1761, -6326, -1798, -6324, -1814, -6300, -1820, -6272, -1828, -6257)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Infestation" index="59"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D2" index="0"]
+position = Vector2(1092, -117)
+polygon = PackedVector2Array(-1845, -5964, -1835, -5978, -1808, -5986, -1787, -5984, -1767, -6008, -1735, -6016, -1712, -6002, -1706, -5982, -1688, -5983, -1674, -5973, -1676, -5956, -1676, -5948, -1830, -5946)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Infestation" index="60"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D3" index="0"]
+position = Vector2(1246, 31)
+polygon = PackedVector2Array(-1810, -5960, -1798, -5971, -1780, -5975, -1769, -5961, -1766, -5941, -1771, -5923, -1785, -5911, -1804, -5921, -1813, -5935)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Infestation" index="61"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D4" index="0"]
+position = Vector2(509, 167)
+polygon = PackedVector2Array(-1829, -6007, -1842, -5973, -1837, -5937, -1819, -5919, -1795, -5900, -1759, -5891, -1731, -5901, -1709, -5929, -1702, -5967, -1717, -6002, -1737, -6027, -1765, -6040, -1795, -6035, -1817, -6023)
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Infestation" index="62"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D5" index="0"]
+position = Vector2(236, 400)
+polygon = PackedVector2Array(-1933, -6045, -1965, -6038, -2002, -6026, -2025, -5994, -2024, -5951, -1998, -5925, -1959, -5911, -1918, -5919, -1894, -5937, -1885, -5949, -1858, -5943, -1836, -5952, -1841, -5967, -1849, -5981, -1840, -5992, -1843, -6009, -1868, -6031, -1882, -6035, -1890, -6027, -1906, -6026, -1927, -6037)
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Infestation" index="63"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D6" index="0"]
+position = Vector2(138, 879)
+polygon = PackedVector2Array(-1935, -6104, -1952, -6102, -1952, -6045, -1947, -5974, -1950, -5903, -1948, -5844, -1957, -5807, -1947, -5769, -1938, -5751, -1917, -5751, -1914, -6112)
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Infestation" index="64"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D7" index="0"]
+position = Vector2(276, 743)
+polygon = PackedVector2Array(-2004, -5976, -1994, -5991, -1973, -5994, -1959, -5973, -1960, -5953, -1979, -5931, -2005, -5943)
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Infestation" index="65"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D8" index="0"]
+position = Vector2(544, 1189)
+polygon = PackedVector2Array(-2030, -5977, -2005, -6002, -1964, -6001, -1950, -5972, -1955, -5942, -1988, -5924, -2024, -5938)
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="Infestation" index="66"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D9" index="0"]
+position = Vector2(1279, 1200)
+polygon = PackedVector2Array(-2021, -6043, -2059, -6018, -2073, -5988, -2067, -5938, -2046, -5906, -2007, -5896, -1966, -5907, -1949, -5932, -1944, -5952, -1914, -5954, -1897, -5928, -1866, -5907, -1816, -5912, -1791, -5943, -1784, -5984, -1789, -6014, -1821, -6042, -1863, -6045, -1892, -6028, -1926, -6025, -1977, -6032)
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="Infestation" index="67"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D10" index="0"]
+position = Vector2(1460, 975)
+polygon = PackedVector2Array(-1934, -6122, -1892, -6110, -1869, -6085, -1861, -6048, -1876, -6018, -1891, -5991, -1909, -5981, -1940, -5979, -1933, -5956, -1907, -5950, -1875, -5922, -1864, -5887, -1863, -5853, -1889, -5828, -1919, -5814, -1957, -5815, -1990, -5840, -2007, -5879, -2006, -5916, -1975, -5945, -1969, -5983, -1988, -6010, -2007, -6049, -2000, -6073, -1981, -6101, -1959, -6115)
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="Infestation" index="68"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D11" index="0"]
+position = Vector2(1290, 230)
+polygon = PackedVector2Array(-1923, -5923, -1908, -5924, -1904, -5955, -1907, -5995, -1908, -6017, -1924, -6024, -1937, -6015, -1940, -5982, -1938, -5964, -1938, -5942, -1930, -5927)
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="Infestation" index="69"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D12" index="0"]
+position = Vector2(267, 5444)
+polygon = PackedVector2Array(-1941, -6025, -1915, -6030, -1903, -6022, -1903, -5996, -1911, -5985, -1904, -5965, -1910, -5908, -1900, -5845, -1904, -5786, -1911, -5721, -1906, -5686, -1914, -5669, -1942, -5668)
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="Infestation" index="70"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D13" index="0"]
+position = Vector2(1103, 5546)
+polygon = PackedVector2Array(-1925, -5791, -1935, -5788, -1942, -5775, -1937, -5760, -1917, -5754, -1903, -5765, -1904, -5783, -1915, -5791)
+
+[node name="StaticBody2D14" type="StaticBody2D" parent="Infestation" index="71"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D14" index="0"]
+position = Vector2(1104, 5908)
+polygon = PackedVector2Array(-1942, -5796, -1954, -5781, -1953, -5753, -1940, -5736, -1925, -5725, -1909, -5724, -1894, -5735, -1888, -5749, -1889, -5772, -1879, -5766, -1865, -5762, -1853, -5769, -1853, -5783, -1862, -5801, -1875, -5810, -1883, -5821, -1895, -5833, -1906, -5843, -1918, -5845, -1925, -5839, -1929, -5828, -1924, -5815, -1913, -5799, -1925, -5801, -1936, -5800)
+
+[node name="StaticBody2D15" type="StaticBody2D" parent="Infestation" index="72"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D15" index="0"]
+position = Vector2(1164, 6152)
+polygon = PackedVector2Array(-1915, -5795, -1931, -5789, -1940, -5777, -1937, -5763, -1925, -5754, -1907, -5748, -1889, -5754, -1878, -5768, -1887, -5787, -1899, -5795)
+
+[node name="StaticBody2D16" type="StaticBody2D" parent="Infestation" index="73"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D16" index="0"]
+position = Vector2(530, 6034)
+polygon = PackedVector2Array(-1910, -5800, -1923, -5788, -1933, -5762, -1932, -5747, -1920, -5742, -1905, -5746, -1894, -5763, -1888, -5775, -1885, -5788, -1894, -5795, -1902, -5796)
+
+[node name="StaticBody2D17" type="StaticBody2D" parent="Infestation" index="74"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D17" index="0"]
+position = Vector2(2324, 4999)
+polygon = PackedVector2Array(-1931, -5835, -1957, -5822, -1971, -5798, -1977, -5777, -1979, -5751, -1974, -5725, -1949, -5705, -1910, -5695, -1878, -5704, -1854, -5735, -1850, -5769, -1856, -5797, -1868, -5817, -1893, -5833)
+
+[node name="StaticBody2D18" type="StaticBody2D" parent="Infestation" index="75"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D18" index="0"]
+position = Vector2(3411, 4892)
+polygon = PackedVector2Array(-1939, -5787, -1945, -5777, -1941, -5755, -1920, -5741, -1898, -5740, -1892, -5754, -1893, -5774, -1914, -5788, -1932, -5793)
+
+[node name="StaticBody2D19" type="StaticBody2D" parent="Infestation" index="76"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D19" index="0"]
+position = Vector2(2546, 5376)
+polygon = PackedVector2Array(-1941, -5771, -1945, -5791, -1939, -5809, -1928, -5818, -1912, -5811, -1908, -5794, -1908, -5788, -1888, -5787, -1876, -5781, -1872, -5770, -1873, -5760, -1881, -5751, -1892, -5748, -1904, -5754, -1905, -5737, -1909, -5721, -1919, -5714, -1930, -5716, -1937, -5725, -1941, -5733)
+
+[node name="StaticBody2D20" type="StaticBody2D" parent="Infestation" index="77"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D20" index="0"]
+position = Vector2(2426, 5649)
+polygon = PackedVector2Array(-1947, -5794, -1959, -5778, -1957, -5759, -1946, -5742, -1947, -5718, -1930, -5729, -1910, -5727, -1894, -5735, -1882, -5746, -1876, -5766, -1882, -5788, -1888, -5794, -1891, -5811, -1903, -5803, -1920, -5807, -1934, -5802, -1945, -5796)
+
+[node name="StaticBody2D21" type="StaticBody2D" parent="Infestation" index="78"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D21" index="0"]
+position = Vector2(3375, 5798)
+polygon = PackedVector2Array(-1952, -5761, -1966, -5755, -1976, -5740, -1966, -5726, -1953, -5715, -1936, -5707, -1923, -5710, -1920, -5721, -1925, -5735, -1909, -5735, -1888, -5738, -1880, -5750, -1879, -5769, -1887, -5788, -1902, -5802, -1921, -5808, -1937, -5802, -1946, -5791, -1949, -5777)
+
+[node name="StaticBody2D22" type="StaticBody2D" parent="Infestation" index="79"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D22" index="0"]
+position = Vector2(1382, 5786)
+polygon = PackedVector2Array(-1909, -5637, -1907, -5681, -1906, -5713, -1898, -5733, -1905, -5759, -1909, -5804, -1912, -5819, -1911, -5866, -1904, -5892, -1904, -5924, -1921, -5933, -1945, -5927, -1943, -5594, -1933, -5573, -1914, -5572, -1903, -5592, -1913, -5617)
+
+[node name="StaticBody2D23" type="StaticBody2D" parent="Infestation" index="80"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D23" index="0"]
+position = Vector2(2456, 6343)
+polygon = PackedVector2Array(-1940, -5729, -1944, -5712, -1937, -5693, -1924, -5682, -1908, -5679, -1896, -5686, -1891, -5695, -1903, -5731, -1929, -5739)
+
+[node name="StaticBody2D24" type="StaticBody2D" parent="Infestation" index="81"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D24" index="0"]
+position = Vector2(3604, 6475)
+polygon = PackedVector2Array(-1877, -5752, -1862, -5732, -1859, -5706, -1872, -5676, -1895, -5662, -1911, -5647, -1945, -5642, -1967, -5655, -1991, -5673, -2000, -5700, -2003, -5735, -1990, -5755, -1969, -5769, -1935, -5777, -1903, -5777, -1882, -5765)
+
+[node name="StaticBody2D25" type="StaticBody2D" parent="Infestation" index="82"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D25" index="0"]
+position = Vector2(1954, 7239)
+polygon = PackedVector2Array(-1866, -5729, -1868, -5741, -1856, -5734, -1837, -5738, -1835, -5754, -1844, -5774, -1857, -5784, -1871, -5811, -1889, -5818, -1900, -5818, -1907, -5808, -1903, -5790, -1925, -5794, -1951, -5791, -1972, -5781, -1990, -5767, -1998, -5751, -2000, -5739, -2015, -5745, -2032, -5738, -2038, -5725, -2034, -5715, -2019, -5707, -2007, -5709, -1999, -5716, -1993, -5706, -1992, -5694, -1983, -5679, -1973, -5667, -1963, -5658, -1947, -5652, -1922, -5653, -1897, -5659, -1886, -5672, -1876, -5685, -1866, -5709)
+
+[node name="StaticBody2D26" type="StaticBody2D" parent="Infestation" index="83"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D26" index="0"]
+position = Vector2(3588, 6958)
+polygon = PackedVector2Array(-1928, -5782, -1940, -5779, -1950, -5760, -1958, -5736, -1949, -5721, -1964, -5707, -1969, -5692, -1967, -5671, -1958, -5658, -1959, -5637, -1944, -5645, -1926, -5642, -1905, -5650, -1888, -5669, -1887, -5699, -1898, -5715, -1904, -5727, -1916, -5725, -1923, -5732, -1915, -5755, -1912, -5768, -1917, -5777)
+
+[node name="StaticBody2D27" type="StaticBody2D" parent="Infestation" index="84"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D27" index="0"]
+position = Vector2(3971, 7446)
+polygon = PackedVector2Array(-1911, -5890, -1924, -5892, -1945, -5883, -1947, -5847, -1947, -5784, -1947, -5739, -1945, -5720, -1949, -5692, -1942, -5666, -1947, -5634, -1946, -5583, -1945, -5543, -1971, -5531, -1986, -5504, -1982, -5481, -1967, -5470, -1949, -5467, -1924, -5480, -1899, -5488, -1904, -5883)
+
+[node name="StaticBody2D28" type="StaticBody2D" parent="Infestation" index="85"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D28" index="0"]
+position = Vector2(2263, 7891)
+polygon = PackedVector2Array(-1905, -5693, -1892, -5709, -1914, -5709, -1939, -5719, -1962, -5720, -1977, -5706, -1986, -5679, -1983, -5659, -1953, -5640, -1923, -5643, -1908, -5659)
+
+[node name="StaticBody2D29" type="StaticBody2D" parent="Infestation" index="86"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D29" index="0"]
+position = Vector2(3200, 8756)
+polygon = PackedVector2Array(-1936, -5852, -1957, -5847, -1965, -5834, -1960, -5805, -1964, -5787, -1959, -5774, -1963, -5739, -1959, -5724, -1963, -5702, -1958, -5685, -1962, -5652, -1958, -5629, -1966, -5606, -1961, -5584, -1966, -5561, -1960, -5548, -1963, -5522, -1958, -5497, -1945, -5491, -1931, -5495, -1924, -5507, -1920, -5830, -1925, -5844)
+
+[node name="StaticBody2D30" type="StaticBody2D" parent="Infestation" index="87"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D30" index="0"]
+position = Vector2(3210, 9832)
+polygon = PackedVector2Array(-1966, -5775, -1988, -5763, -1999, -5741, -2003, -5717, -1989, -5700, -1956, -5693, -1943, -5695, -1956, -5673, -1946, -5650, -1931, -5636, -1911, -5632, -1887, -5638, -1873, -5658, -1871, -5681, -1888, -5702, -1906, -5714, -1922, -5719, -1921, -5741, -1937, -5768)
+
+[node name="StaticBody2D31" type="StaticBody2D" parent="Infestation" index="88"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D31" index="0"]
+position = Vector2(3126, 9899)
+polygon = PackedVector2Array(-1936, -5735, -1954, -5731, -1958, -5702, -1942, -5687, -1919, -5678, -1906, -5687, -1907, -5708, -1919, -5727)
+
+[node name="StaticBody2D32" type="StaticBody2D" parent="Infestation" index="89"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D32" index="0"]
+position = Vector2(2413, 10791)
+polygon = PackedVector2Array(-1935, -5774, -1956, -5764, -1969, -5747, -1980, -5726, -1999, -5746, -2017, -5751, -2037, -5741, -2051, -5714, -2046, -5686, -2028, -5671, -2012, -5669, -1989, -5681, -1984, -5666, -1962, -5649, -1941, -5637, -1916, -5634, -1893, -5642, -1875, -5649, -1863, -5669, -1858, -5689, -1860, -5701, -1855, -5723, -1864, -5745, -1879, -5764, -1898, -5772, -1917, -5776)
+
+[node name="StaticBody2D33" type="StaticBody2D" parent="Infestation" index="90"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D33" index="0"]
+position = Vector2(2231, 10250)
+polygon = PackedVector2Array(-1950, -5553, -1933, -5535, -1918, -5540, -1911, -5563, -1922, -5589, -1917, -5620, -1918, -5672, -1907, -5690, -1909, -5712, -1919, -5752, -1917, -5783, -1918, -5817, -1911, -5841, -1914, -5862, -1915, -5891, -1936, -5897, -1949, -5886, -1955, -5882, -1957, -5561)
+
+[node name="StaticBody2D34" type="StaticBody2D" parent="Infestation" index="91"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D34" index="0"]
+position = Vector2(2255, 9826)
+polygon = PackedVector2Array(-1939, -5760, -1962, -5755, -1963, -5730, -1945, -5721, -1928, -5725, -1922, -5748)
+
+[node name="StaticBody2D35" type="StaticBody2D" parent="Infestation" index="92"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D35" index="0"]
+position = Vector2(2403, 9671)
+polygon = PackedVector2Array(-1962, -5766, -1971, -5756, -1971, -5743, -1964, -5731, -1955, -5714, -1940, -5707, -1923, -5723, -1925, -5738, -1936, -5752, -1947, -5762)
+
+[node name="StaticBody2D36" type="StaticBody2D" parent="Infestation" index="93"]
+collision_layer = 4
+collision_mask = 11
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Infestation/StaticBody2D36" index="0"]
+position = Vector2(3208, 9546)
+polygon = PackedVector2Array(-1960, -5770, -1964, -5745, -1961, -5730, -1966, -5709, -1962, -5690, -1950, -5682, -1933, -5688, -1929, -5707, -1931, -5726, -1927, -5744, -1926, -5764, -1936, -5781, -1948, -5785)
+
 [node name="Items" parent="." index="3"]
 metadata/_edit_lock_ = true
 
