@@ -12,6 +12,8 @@ script = ExtResource("1_dcbrs")
 
 [node name="Ground" type="Node2D" parent="."]
 
+[node name="Infestation" type="Node2D" parent="."]
+
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Projectiles" type="Node2D" parent="."]
