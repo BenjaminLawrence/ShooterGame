@@ -21,7 +21,6 @@ func _on_player_shoot_laser(pos, direction) -> void:
 	laser.rotation_degrees = rad_to_deg(direction.angle()) + 90
 	laser.direction = direction
 	$Projectiles.add_child(laser)
-	$UI.update_laser_text()
 
 
 func _on_player_throw_grenade(pos, direction) -> void:
@@ -29,7 +28,6 @@ func _on_player_throw_grenade(pos, direction) -> void:
 	grenade.position = pos
 	grenade.linear_velocity = direction * grenade.speed
 	$Projectiles.add_child(grenade)
-	$UI.update_grenade_text()
 
 
 func _on_player_update_stats() -> void:
