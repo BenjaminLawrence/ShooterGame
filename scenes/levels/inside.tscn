@@ -46,74 +46,156 @@ rotation = -1.86576
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_fd0of")
 
-[node name="Brush045" type="Sprite2D" parent="Decals" index="1"]
+[node name="Brush058" type="Sprite2D" parent="Decals" index="1"]
+modulate = Color(0.117647, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-781, -5809)
+rotation = -2.99149
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_fd0of")
+
+[node name="Brush045" type="Sprite2D" parent="Decals" index="2"]
 modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(135, 998)
 rotation = 0.532325
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_swhsv")
 
-[node name="Brush046" type="Sprite2D" parent="Decals" index="2"]
+[node name="Brush059" type="Sprite2D" parent="Decals" index="3"]
+modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(1828, 4863)
+rotation = -0.532325
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_swhsv")
+
+[node name="Brush046" type="Sprite2D" parent="Decals" index="4"]
 modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(1247, -682)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_e1igo")
 
-[node name="Brush047" type="Sprite2D" parent="Decals" index="3"]
+[node name="Brush060" type="Sprite2D" parent="Decals" index="5"]
+modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-1036, -707)
+rotation = -0.628319
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_e1igo")
+
+[node name="Brush047" type="Sprite2D" parent="Decals" index="6"]
 modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(-210, 1777)
 rotation = -1.03149
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("6_205jl")
 
-[node name="Brush048" type="Sprite2D" parent="Decals" index="4"]
+[node name="Brush061" type="Sprite2D" parent="Decals" index="7"]
+modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-1692, -3066)
+rotation = -0.891863
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("6_205jl")
+
+[node name="Brush048" type="Sprite2D" parent="Decals" index="8"]
 modulate = Color(0.392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(-326, -5441)
 texture = ExtResource("7_ubs5k")
 
-[node name="Brush049" type="Sprite2D" parent="Decals" index="5"]
+[node name="Brush062" type="Sprite2D" parent="Decals" index="9"]
+modulate = Color(0.392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(561, 4966)
+rotation = -0.844739
+texture = ExtResource("7_ubs5k")
+
+[node name="Brush049" type="Sprite2D" parent="Decals" index="10"]
 modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(948, 3936)
 rotation = -1.68773
 texture = ExtResource("8_ohhth")
 
-[node name="Brush050" type="Sprite2D" parent="Decals" index="6"]
+[node name="Brush063" type="Sprite2D" parent="Decals" index="11"]
+modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-1285, -1945)
+rotation = 0.937242
+texture = ExtResource("8_ohhth")
+
+[node name="Brush050" type="Sprite2D" parent="Decals" index="12"]
 modulate = Color(0.294118, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(596, 4346)
 texture = ExtResource("9_2kxxk")
 
-[node name="Brush051" type="Sprite2D" parent="Decals" index="7"]
+[node name="Brush057" type="Sprite2D" parent="Decals" index="13"]
+modulate = Color(0.294118, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-896, 541)
+rotation = -0.514872
+texture = ExtResource("9_2kxxk")
+
+[node name="Brush051" type="Sprite2D" parent="Decals" index="14"]
 modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(-1307, 1552)
 rotation = 0.561996
 texture = ExtResource("10_d74lc")
 
-[node name="Brush052" type="Sprite2D" parent="Decals" index="8"]
+[node name="Brush064" type="Sprite2D" parent="Decals" index="15"]
+modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(507, 2489)
+rotation = 0.561996
+texture = ExtResource("10_d74lc")
+
+[node name="Brush052" type="Sprite2D" parent="Decals" index="16"]
 modulate = Color(0.294118, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(-976, 1744)
 rotation = 0.357792
 texture = ExtResource("11_dpd32")
 
-[node name="Brush053" type="Sprite2D" parent="Decals" index="9"]
+[node name="Brush065" type="Sprite2D" parent="Decals" index="17"]
+modulate = Color(0.294118, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-296, 212)
+rotation = 0.357792
+texture = ExtResource("11_dpd32")
+
+[node name="Brush053" type="Sprite2D" parent="Decals" index="18"]
 modulate = Color(0.392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(215, -583)
 texture = ExtResource("12_0ud55")
 
-[node name="Brush054" type="Sprite2D" parent="Decals" index="10"]
+[node name="Brush066" type="Sprite2D" parent="Decals" index="19"]
+modulate = Color(0.392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-889, -3703)
+rotation = -0.602139
+texture = ExtResource("12_0ud55")
+
+[node name="Brush054" type="Sprite2D" parent="Decals" index="20"]
 modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(1120, 421)
 rotation = 0.750492
 texture = ExtResource("13_y6048")
 
-[node name="Brush055" type="Sprite2D" parent="Decals" index="11"]
+[node name="Brush067" type="Sprite2D" parent="Decals" index="21"]
+modulate = Color(0.0392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-901, -4236)
+rotation = 0.750492
+texture = ExtResource("13_y6048")
+
+[node name="Brush055" type="Sprite2D" parent="Decals" index="22"]
 modulate = Color(0.196078, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(421, 1476)
 rotation = -0.663225
 texture = ExtResource("14_36v4t")
 
-[node name="Brush056" type="Sprite2D" parent="Decals" index="12"]
+[node name="Brush068" type="Sprite2D" parent="Decals" index="23"]
+modulate = Color(0.196078, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(1071, 2706)
+rotation = -0.663225
+texture = ExtResource("14_36v4t")
+
+[node name="Brush056" type="Sprite2D" parent="Decals" index="24"]
 modulate = Color(0.392157, 0.0392157, 0.0392157, 0.392157)
 position = Vector2(953, 1948)
+texture = ExtResource("15_beu1i")
+
+[node name="Brush069" type="Sprite2D" parent="Decals" index="25"]
+modulate = Color(0.392157, 0.0392157, 0.0392157, 0.392157)
+position = Vector2(-1577, -3938)
+rotation = -0.479966
 texture = ExtResource("15_beu1i")
 
 [node name="Ground" parent="." index="1"]
@@ -248,17 +330,14 @@ rotation = -2.55167
 position = Vector2(-1534, -5825)
 rotation = -0.785398
 
-[node name="Items" parent="." index="2"]
+[node name="Items" parent="." index="3"]
 metadata/_edit_lock_ = true
 
 [node name="DarkLight" type="DirectionalLight2D" parent="." index="4"]
+visible = false
 color = Color(1, 1, 1, 0.705882)
 blend_mode = 1
 metadata/_edit_lock_ = true
-
-[node name="Player" parent="." index="5"]
-position = Vector2(2334, 4685)
-metadata/_edit_group_ = true
 
 [node name="ExitGateArea" type="Area2D" parent="." index="6"]
 position = Vector2(2534, 4689)
@@ -267,7 +346,12 @@ position = Vector2(2534, 4689)
 position = Vector2(265, -8)
 shape = SubResource("RectangleShape2D_qmffj")
 
-[node name="Lights" parent="." index="7"]
+[node name="Player" parent="." index="7"]
+position = Vector2(2334, 4685)
+metadata/_edit_group_ = true
+
+[node name="Lights" parent="." index="8"]
+visible = false
 metadata/_edit_lock_ = true
 
 [node name="LightFanAnimation" parent="Lights" index="0" instance=ExtResource("6_172tt")]
@@ -367,7 +451,7 @@ position = Vector2(2160, -10250)
 position = Vector2(2160, -8460)
 rotation = -3.14159
 
-[node name="BackgroundMusic" parent="." index="9"]
+[node name="BackgroundMusic" parent="." index="10"]
 stream = ExtResource("9_a155e")
 volume_db = -20.0
 
