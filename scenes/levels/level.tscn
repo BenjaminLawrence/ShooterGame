@@ -10,7 +10,7 @@ script = ExtResource("1_dcbrs")
 
 [node name="Ground" type="Node2D" parent="."]
 
-[node name="Lights" type="Node2D" parent="."]
+[node name="Items" type="Node2D" parent="."]
 
 [node name="Projectiles" type="Node2D" parent="."]
 metadata/_edit_lock_ = true
@@ -22,6 +22,8 @@ position = Vector2(512, 517)
 zoom = Vector2(0.6, 0.6)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
+
+[node name="Lights" type="Node2D" parent="."]
 
 [node name="UI" parent="." instance=ExtResource("3_dnvqt")]
 

@@ -29,6 +29,10 @@ window/size/viewport_height=720
 
 project/assembly_name="Shooter"
 
+[global_group]
+
+Container=""
+
 [input]
 
 left={

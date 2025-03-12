@@ -22,3 +22,18 @@ texture = ExtResource("4_eeaf3")
 [node name="CollisionShape2D" parent="." index="2"]
 visible = false
 shape = SubResource("CapsuleShape2D_75s6t")
+
+[node name="Marker2D" type="Marker2D" parent="SpawnPositions" index="0"]
+position = Vector2(-15, -13)
+
+[node name="Marker2D2" type="Marker2D" parent="SpawnPositions" index="1"]
+position = Vector2(21, -14)
+
+[node name="Marker2D3" type="Marker2D" parent="SpawnPositions" index="2"]
+position = Vector2(3, 38)
+
+[node name="Marker2D4" type="Marker2D" parent="SpawnPositions" index="3"]
+position = Vector2(11, 11)
+
+[node name="Marker2D5" type="Marker2D" parent="SpawnPositions" index="4"]
+position = Vector2(-9, 22)
