@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://bek1ajvjngxgm"]
+[gd_scene load_steps=21 format=4 uid="uid://bek1ajvjngxgm"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_wf8u8"]
 [ext_resource type="TileSet" uid="uid://b86580xnefnhs" path="res://scenes/levels/floor.tres" id="2_3gmub"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bq5xcbtj6yda7" path="res://scenes/objects/warning_light.tscn" id="7_qjnm3"]
 [ext_resource type="PackedScene" uid="uid://c54cxflfn07vh" path="res://scenes/objects/simple_light.tscn" id="8_5tiam"]
 [ext_resource type="PackedScene" uid="uid://cwilyvmosy44" path="res://scenes/objects/heavy_vent.tscn" id="8_b8pmg"]
+[ext_resource type="PackedScene" uid="uid://b3cple8urvy6j" path="res://scenes/objects/steam_vent.tscn" id="8_fnk4g"]
 [ext_resource type="PackedScene" uid="uid://bpg3436uvblwp" path="res://scenes/objects/bed.tscn" id="9_26kee"]
 [ext_resource type="AudioStream" uid="uid://bf1uf1gg82qxh" path="res://audio/the_black_company.mp3" id="9_a155e"]
 [ext_resource type="PackedScene" uid="uid://cx2dls8hvkxo4" path="res://scenes/objects/toilet.tscn" id="9_i3vss"]
@@ -59,6 +60,18 @@ position = Vector2(-1370, 980)
 
 [node name="SteamVent2" parent="Ground/FX" index="1" instance=ExtResource("8_b8pmg")]
 position = Vector2(-1360, -180)
+
+[node name="SteamVent3" parent="Ground/FX" index="2" instance=ExtResource("8_fnk4g")]
+position = Vector2(288, 2039)
+
+[node name="SteamVent4" parent="Ground/FX" index="3" instance=ExtResource("8_fnk4g")]
+position = Vector2(1269, 2047)
+
+[node name="SteamVent5" parent="Ground/FX" index="4" instance=ExtResource("8_fnk4g")]
+position = Vector2(-1074, -2625)
+
+[node name="SteamVent6" parent="Ground/FX" index="5" instance=ExtResource("8_fnk4g")]
+position = Vector2(-1659, -2623)
 
 [node name="Objects" type="Node2D" parent="Ground" index="5"]
 metadata/_edit_lock_ = true
