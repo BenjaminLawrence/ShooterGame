@@ -11,13 +11,15 @@ size = Vector2(401, 178)
 [node name="Crate" instance=ExtResource("1_7bjr2")]
 script = ExtResource("2_5isji")
 
-[node name="Sprite2D" parent="." index="0"]
+[node name="BaseSprite" parent="." index="0"]
 texture = ExtResource("2_4x4jw")
 
-[node name="Sprite2D2" type="Sprite2D" parent="." index="1"]
-position = Vector2(0, 12)
+[node name="LidSprite" parent="." index="1"]
+position = Vector2(0, 11)
+scale = Vector2(1.00274, 0.969697)
 texture = ExtResource("3_v6b2f")
 
 [node name="CollisionShape2D" parent="." index="2"]
+visible = false
 position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_oq3vv")
