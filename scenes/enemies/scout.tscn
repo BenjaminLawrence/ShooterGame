@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://djn2ey1xmaf86"]
+[gd_scene load_steps=4 format=3 uid="uid://djn2ey1xmaf86"]
 
 [ext_resource type="Texture2D" uid="uid://c810mvlmds5y0" path="res://graphics/enemies/scout.png" id="1_srl7e"]
+[ext_resource type="Script" path="res://scenes/enemies/scout.gd" id="1_taqui"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_oiau1"]
 radius = 47.0956
@@ -8,6 +9,7 @@ radius = 47.0956
 [node name="Scout" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 11
+script = ExtResource("1_taqui")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(37, 27)
