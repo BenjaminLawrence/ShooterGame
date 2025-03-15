@@ -211,7 +211,7 @@ rotation = 0.863938
 
 [node name="DayNightCycle" parent="." index="3" instance=ExtResource("18_trjke")]
 
-[node name="Player" parent="." index="6"]
+[node name="Player" parent="." index="7"]
 metadata/_edit_lock_ = true
 
 [node name="LightFanAnimation" parent="Lights" index="0" instance=ExtResource("14_ufw46")]

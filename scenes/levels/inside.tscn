@@ -915,11 +915,11 @@ position = Vector2(2534, 4689)
 position = Vector2(265, -8)
 shape = SubResource("RectangleShape2D_qmffj")
 
-[node name="Player" parent="." index="7"]
+[node name="Player" parent="." index="8"]
 position = Vector2(2334, 4685)
 metadata/_edit_group_ = true
 
-[node name="Lights" parent="." index="8"]
+[node name="Lights" parent="." index="9"]
 metadata/_edit_lock_ = true
 
 [node name="LightFanAnimation" parent="Lights" index="0" instance=ExtResource("6_172tt")]
@@ -1019,7 +1019,7 @@ position = Vector2(2160, -10250)
 position = Vector2(2160, -8460)
 rotation = -3.14159
 
-[node name="BackgroundMusic" parent="." index="10"]
+[node name="BackgroundMusic" parent="." index="11"]
 stream = ExtResource("9_a155e")
 volume_db = -20.0
 
