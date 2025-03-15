@@ -10,11 +10,7 @@ func _process(_delta):
 	if player_nearby:
 		look_at(Globals.player_pos)
 		if can_laser:
-			var pos: Vector2
-			if second_shot:
-				pos = $LaserSpawnPositions/Marker2D.global_position
-			else:
-				pos = $LaserSpawnPositions/Marker2D2.global_position
+			var pos: Vector2 = $LaserSpawnPositions.get_child(second_shot).global_position
 			second_shot = !second_shot
 			var direction: Vector2 = (Globals.player_pos - position).normalized()
 			laser.emit(pos, direction)
