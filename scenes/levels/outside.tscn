@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://p4jhn3it3efs"]
+[gd_scene load_steps=36 format=4 uid="uid://p4jhn3it3efs"]
 
 [ext_resource type="PackedScene" uid="uid://clyjnhg4t2xcm" path="res://scenes/levels/level.tscn" id="1_yyfw1"]
 [ext_resource type="Texture2D" uid="uid://cdqnmmxwja2ed" path="res://graphics/ground/stones.png" id="2_3k4s8"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://do3n007cpmlpw" path="res://scenes/objects/gate.tscn" id="17_rt266"]
 [ext_resource type="PackedScene" uid="uid://bwlvofceo3rhh" path="res://scenes/levels/day_night_cycle.tscn" id="18_trjke"]
 [ext_resource type="PackedScene" uid="uid://dxbly6n6ddl7m" path="res://scenes/objects/crate.tscn" id="19_drg2p"]
+[ext_resource type="PackedScene" uid="uid://djn2ey1xmaf86" path="res://scenes/enemies/scout.tscn" id="20_2id3b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qadh5"]
 resource_name = "Soil"
@@ -211,7 +212,13 @@ rotation = 0.863938
 
 [node name="DayNightCycle" parent="." index="3" instance=ExtResource("18_trjke")]
 
+[node name="Scout" parent="Enemies" index="0" instance=ExtResource("20_2id3b")]
+position = Vector2(-219, 917)
+
 [node name="Player" parent="." index="7"]
+metadata/_edit_lock_ = true
+
+[node name="Lights" parent="." index="8"]
 metadata/_edit_lock_ = true
 
 [node name="LightFanAnimation" parent="Lights" index="0" instance=ExtResource("14_ufw46")]
