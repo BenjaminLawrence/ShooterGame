@@ -213,7 +213,7 @@ rotation = 0.863938
 [node name="DayNightCycle" parent="." index="3" instance=ExtResource("18_trjke")]
 
 [node name="Scout" parent="Enemies" index="0" instance=ExtResource("20_2id3b")]
-position = Vector2(-219, 917)
+position = Vector2(-219, 984)
 
 [node name="Player" parent="." index="7"]
 metadata/_edit_lock_ = true
