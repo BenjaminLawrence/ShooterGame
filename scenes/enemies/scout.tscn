@@ -9,7 +9,7 @@ radius = 47.0956
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ykbe"]
 radius = 926.001
 
-[node name="Scout" type="CharacterBody2D"]
+[node name="Scout" type="CharacterBody2D" groups=["Scout"]]
 collision_layer = 2
 collision_mask = 11
 script = ExtResource("1_taqui")
@@ -28,5 +28,16 @@ collision_layer = 16
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
 shape = SubResource("CircleShape2D_3ykbe")
 
+[node name="LaserSpawnPositions" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="LaserSpawnPositions"]
+position = Vector2(116, -27)
+
+[node name="Marker2D2" type="Marker2D" parent="LaserSpawnPositions"]
+position = Vector2(126, 11)
+
+[node name="LaserCooldown" type="Timer" parent="."]
+
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
 [connection signal="body_exited" from="AttackArea" to="." method="_on_attack_area_body_exited"]
+[connection signal="timeout" from="LaserCooldown" to="." method="_on_laser_cooldown_timeout"]
