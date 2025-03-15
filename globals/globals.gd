@@ -23,3 +23,5 @@ var health = 60:
 		else:
 			health = value
 		stat_change.emit()
+
+var player_pos: Vector2
