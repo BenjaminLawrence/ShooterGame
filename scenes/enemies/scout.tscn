@@ -48,7 +48,7 @@ position = Vector2(126, 11)
 [node name="LaserCooldown" type="Timer" parent="Timers"]
 
 [node name="DamageCooldown" type="Timer" parent="Timers"]
-wait_time = 0.5
+wait_time = 0.2
 
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
 [connection signal="body_exited" from="AttackArea" to="." method="_on_attack_area_body_exited"]
