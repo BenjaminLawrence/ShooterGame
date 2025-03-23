@@ -14,14 +14,24 @@ var grenade_amount = 5:
 	set(value):
 		grenade_amount = value
 		stat_change.emit()
+var player_vulnerable: bool = true
 var health = 60:
 	get:
 		return health
 	set(value):
-		if (value > 100):
-			health = 100
-		else:
+		if value > health:
+			if (value > 100):
+				health = 100
+			else:
+				health = value
+		elif player_vulnerable:
 			health = value
-		stat_change.emit()
+			player_vulnerable = false
+			player_invulnerable_timer()
+			stat_change.emit()
+
+func player_invulnerable_timer():
+	await get_tree().create_timer(0.5).timeout
+	player_vulnerable = true
 
 var player_pos: Vector2

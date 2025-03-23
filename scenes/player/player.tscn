@@ -95,8 +95,5 @@ wait_time = 0.5
 [node name="GrenadeTimer" type="Timer" parent="Timers"]
 wait_time = 2.0
 
-[node name="VulnerabilityTimer" type="Timer" parent="Timers"]
-wait_time = 0.5
-
 [connection signal="timeout" from="Timers/LaserTimer" to="." method="_on_laser_timer_timeout"]
 [connection signal="timeout" from="Timers/GrenadeTimer" to="." method="_on_grenade_timer_timeout"]
