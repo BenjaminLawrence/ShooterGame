@@ -11,11 +11,11 @@ signal laser(pos, direciton)
 
 func hit():
 	if damageable:
+		health -= 10
 		damageable = false
 		$DamageCooldown.start()
-		health -= 10
-		if health <= 0:
-			queue_free()
+	if health <= 0:
+		queue_free()
 
 
 func _process(_delta):
