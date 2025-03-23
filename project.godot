@@ -33,6 +33,7 @@ project/assembly_name="Shooter"
 
 Container=""
 Scout=""
+Entity=""
 
 [input]
 

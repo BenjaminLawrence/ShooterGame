@@ -34,7 +34,7 @@ polygon = PackedVector2Array(-61, -1, -60, -17, -54, -28, -52, -35, -44, -44, -3
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_41ytr"]
 polygon = PackedVector2Array(0, 13, -6, 11, -11, 6, -15, 0, -16, -6, -15, -12, -12, -16, -8, -19, -3, -21, 3, -22, 8, -22, 12, -20, 34, -25, 37, -19, 10, -10, 8, -6, 8, -2, 10, 4, 36, 12, 34, 20, 22, 17, 10, 15, 4, 14)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Entity"]]
 collision_mask = 31
 script = ExtResource("1_dvklm")
 
