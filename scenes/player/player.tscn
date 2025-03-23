@@ -46,12 +46,6 @@ texture = ExtResource("1_e4snq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ypb1e")
 
-[node name="LaserTimer" type="Timer" parent="."]
-wait_time = 0.5
-
-[node name="GrenadeTimer" type="Timer" parent="."]
-wait_time = 2.0
-
 [node name="ProjectileStartPositions" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="ProjectileStartPositions"]
@@ -93,5 +87,16 @@ texture_scale = 3.0
 occluder = SubResource("OccluderPolygon2D_41ytr")
 occluder_light_mask = 2
 
-[connection signal="timeout" from="LaserTimer" to="." method="_on_laser_timer_timeout"]
-[connection signal="timeout" from="GrenadeTimer" to="." method="_on_grenade_timer_timeout"]
+[node name="Timers" type="Node" parent="."]
+
+[node name="LaserTimer" type="Timer" parent="Timers"]
+wait_time = 0.5
+
+[node name="GrenadeTimer" type="Timer" parent="Timers"]
+wait_time = 2.0
+
+[node name="VulnerabilityTimer" type="Timer" parent="Timers"]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timers/LaserTimer" to="." method="_on_laser_timer_timeout"]
+[connection signal="timeout" from="Timers/GrenadeTimer" to="." method="_on_grenade_timer_timeout"]
