@@ -20,10 +20,7 @@ var health = 60:
 		return health
 	set(value):
 		if value > health:
-			if (value > 100):
-				health = 100
-			else:
-				health = value
+			health = min(value, 100)
 		elif player_vulnerable:
 			health = value
 			player_vulnerable = false
