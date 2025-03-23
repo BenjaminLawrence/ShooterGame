@@ -9,7 +9,7 @@ func _process(_delta: float) -> void:
 		var targets = get_tree().get_nodes_in_group('Container') + get_tree().get_nodes_in_group('Scout')
 		for target in targets:
 			var in_range = target.global_position.distance_to(position) < explosion_range
-			if in_range:
+			if "hit" in target and in_range:
 				target.hit()
 
 func explode():
