@@ -25,7 +25,7 @@ var health = 60:
 			health = value
 			player_vulnerable = false
 			player_invulnerable_timer()
-			stat_change.emit()
+		stat_change.emit()
 
 func player_invulnerable_timer():
 	await get_tree().create_timer(0.5).timeout
