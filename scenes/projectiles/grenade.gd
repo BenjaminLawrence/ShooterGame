@@ -6,7 +6,8 @@ var exploding: bool = false
 
 func _process(_delta: float) -> void:
 	if exploding:
-		for target in get_tree().get_nodes_in_group('Container') + get_tree().get_nodes_in_group('Scout'):\
+		var targets = get_tree().get_nodes_in_group('Container') + get_tree().get_nodes_in_group('Scout')
+		for target in targets:
 			if (target as Node2D).position.distance_to(position) < explosion_range:
 				target.hit()
 
