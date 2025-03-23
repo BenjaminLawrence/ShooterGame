@@ -8,4 +8,4 @@ func _process(_delta: float) -> void:
 
 
 func hit():
-	print("damage")
+	print("Drone was hit")

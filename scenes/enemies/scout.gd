@@ -6,6 +6,10 @@ var second_shot: bool = false
 
 signal laser(pos, direciton)
 
+func hit():
+	print("Scout was hit")
+
+
 func _process(_delta):
 	if player_nearby:
 		look_at(Globals.player_pos)
