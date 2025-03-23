@@ -31,7 +31,7 @@ func _process(_delta: float) -> void:
 		var selected_marker = laser_markers[randi() % laser_markers.size()]
 		can_laser = false
 		Globals.laser_amount -= 1
-		$LaserTimer.start()
+		$Timers/LaserTimer.start()
 		shoot_laser.emit(selected_marker.global_position, player_direction)
 		#$LaserParticles.rotation_degrees = rad_to_deg(player_direction.angle())
 		$LaserParticles.emitting = true
@@ -42,7 +42,7 @@ func _process(_delta: float) -> void:
 		var pos_marker = $ProjectileStartPositions.get_children()[0]
 		can_grenade = false
 		Globals.grenade_amount -= 1
-		$GrenadeTimer.start()
+		$Timers/GrenadeTimer.start()
 		throw_grenade.emit(pos_marker.global_position, player_direction)
 	
 	

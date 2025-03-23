@@ -13,7 +13,8 @@ func hit():
 	if damageable:
 		health -= 10
 		damageable = false
-		$DamageCooldown.start()
+		$Timers/DamageCooldown.start()
+		$Sprite2D.material.set_shader_parameter("progress",1)
 	if health <= 0:
 		queue_free()
 
@@ -27,7 +28,7 @@ func _process(_delta):
 			var direction: Vector2 = (Globals.player_pos - position).normalized()
 			laser.emit(pos, direction)
 			can_laser = false
-			$LaserCooldown.start()
+			$Timers/LaserCooldown.start()
 
 
 func _on_attack_area_body_entered(_body: Node2D) -> void:
@@ -44,3 +45,4 @@ func _on_laser_cooldown_timeout() -> void:
 
 func _on_damage_cooldown_timeout() -> void:
 	damageable = true
+	$Sprite2D.material.set_shader_parameter("progress",0)
