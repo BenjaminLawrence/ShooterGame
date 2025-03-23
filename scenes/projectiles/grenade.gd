@@ -11,5 +11,5 @@ func _process(_delta: float) -> void:
 				target.hit()
 
 func explode():
-	exploding = true
 	$AnimationPlayer.play("Explosion")
+	exploding = true
